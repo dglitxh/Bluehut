@@ -1,13 +1,51 @@
+
+@import '~antd/dist/antd.css';
+
 body {
-  
+ 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(10, 10, 56);
+  color: aliceblue;
+  color: gray;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hero{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  /* color: #63AFFF; */
+  color: aliceblue;
+  
+  
+  
+}
+
+.hero h1{
+  color: aliceblue;
+  font-size: 50px;
+}
+.hero h1 span{
+  color: #0284C7;
+}
+
+.hero-img{
+  padding-left: 10%;
+  padding-right: 10%;
+padding-top: 15%;
+  
+
 }
