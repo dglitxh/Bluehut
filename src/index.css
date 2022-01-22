@@ -1,16 +1,15 @@
 
 @import '~antd/dist/antd.css';
 
+*{
+ /* color: #f0f8ff;*/
+  background-color: grey;
+}
+
 body {
- 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(10, 10, 56);
-  color: aliceblue;
-  color: gray;
+  /*background-color: rgb(10, 10, 56);*/
+ /* color: aliceblue;*/
+  color: black;
 }
 
 code {
@@ -18,34 +17,49 @@ code {
     monospace;
 }
 
+
 .hero{
   display: flex;
   justify-content: left;
   align-items: center;
   flex-direction: column;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 25%;
-  padding-bottom: 25%;
+  padding-top: 10%;
   /* color: #63AFFF; */
-  color: aliceblue;
-  
-  
-  
+  /*color: aliceblue;*/
+  margin-bottom: 15%;
 }
 
-.hero h1{
-  color: aliceblue;
-  font-size: 50px;
+nav{
+  color: black;
 }
+
 .hero h1 span{
   color: #0284C7;
 }
 
 .hero-img{
-  padding-left: 10%;
-  padding-right: 10%;
-padding-top: 15%;
-  
+  margin-bottom: 15%;
+}
+
+.hero p {
+  font-size: medium;
+}
+
+
+
+.drawer-items{
+  color: black;
+
+}
+
+.desc-cards{
+ background-image: url('./components/utils/svgs/Waimakariri.svg');
+ background-attachment: fixed;
+ background-position: center;
+ padding: 3%;
+ color: black;
+
+}
+.card{
 
 }
