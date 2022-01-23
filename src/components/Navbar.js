@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Drawer, Button } from 'antd';
-import { MenuOutlined } from '@ant-design/icons'
+import { MenuOutlined, HomeTwoTone } from '@ant-design/icons'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -11,20 +11,25 @@ const Navbar = () => {
 
   const onClose = () => {
     setVisible(false);
+
   };
 
     return (
-     <nav class=" navbar navbar-dark text-dark">
-     <a class="navbar-brand" href="#">Fixed top</a>
-    <button onClick={showDrawer} class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-     
-      <Drawer title="Basic Drawer" placement="right" onClose={onClose} visible={visible}>
+     <nav class="container-fluid navbar">
+     <a class="navbar-brand " href="#"> BlueHut Eng</a>
+    <Button onClick={showDrawer} class=" menu-button " type="button">
+      <MenuOutlined />
+    </Button>
+
+      <Drawer title="Main Menu" placement="right" onClose={onClose} visible={visible}>
       <div className="drawer-items">
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <div className='menu-items'>
+          <a><h3>Home</h3></a>
+          <a><h3>About</h3></a>
+          <a><h3>Contact</h3></a>
+          <Button type='danger' onClick={onClose}>Close</Button>
+
+        </div>
       </div>
       </Drawer>
       </nav>
@@ -32,4 +37,4 @@ const Navbar = () => {
 }
 
 
-export default Navbar 
+export default Navbar

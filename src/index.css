@@ -3,7 +3,7 @@
 
 *{
  /* color: #f0f8ff;*/
-  background-color: grey;
+
 }
 
 body {
@@ -29,8 +29,9 @@ code {
   margin-bottom: 15%;
 }
 
-nav{
-  color: black;
+.navbar-brand {
+  color: #0284C7;
+  font-weight: bold;
 }
 
 .hero h1 span{
@@ -53,13 +54,23 @@ nav{
 }
 
 .desc-cards{
- background-image: url('./components/utils/svgs/Waimakariri.svg');
- background-attachment: fixed;
- background-position: center;
  padding: 3%;
  color: black;
 
 }
 .card{
+ margin-bottom: 15px;
+ height: 400px
+}
 
+.menu-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-items: hover,
+:active{
+  color: blue;
 }
