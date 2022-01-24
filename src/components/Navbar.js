@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
     return (
-     <nav class="container-fluid navbar">
+     <nav class="container navbar">
      <a class="navbar-brand " href="#"> BlueHut Eng</a>
     <Button onClick={showDrawer} class=" menu-button " type="button">
       <MenuOutlined />

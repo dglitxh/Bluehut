@@ -6,6 +6,7 @@ const Skills = () => {
       color: '#fff',
       lineHeight: '160px',
       textAlign: 'center',
+      background: "blue"
 
     };
     return (
