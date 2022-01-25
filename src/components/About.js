@@ -13,13 +13,10 @@ const About = () => {
 
     return (
         <div className="Services container mt-20 mb-10">
-        <h1 className="text-center"> Our Services Include</h1>
+        <h1 className="t"> Our Services Include</h1>
       <Row >
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <motion.div className="info-card"
-           animate={{ x: [-1000, 100, -100, 0]}}
-           transition={{ ease: "easeOut", duration: 2 }}
-       >
+      <div className="info-card">
         <h2><HomeTwoTone/></h2>
        <h5> Customer Support </h5>
          <p class="card-text">Some quick example text
@@ -27,36 +24,32 @@ const About = () => {
           and make up the bulk of the card's content.
         </p>
 
-      </motion.div>
+      </div>
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <motion.div  className="info-card">
+      <div  className="info-card">
       <h2><HomeTwoTone/></h2>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
          and make up the bulk of the card's content.
        </p>
-      </motion.div>
+      </div>
 
       </Col>
-
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <motion.div className="info-card">
+      <div  className="info-card">
       <h2><HomeTwoTone/></h2>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
          and make up the bulk of the card's content.
        </p>
-      </motion.div>
+      </div>
       </Col>
 
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <motion.div className="info-card"
-           animate={{ x: [-1000, 100, -100, 0]}}
-           transition={{ ease: "easeOut", duration: 2 }}
-       >
+      <div className="info-card">
         <h2><HomeTwoTone/></h2>
        <h5> Customer Support </h5>
          <p class="card-text">Some quick example text
@@ -64,29 +57,29 @@ const About = () => {
           and make up the bulk of the card's content.
         </p>
 
-      </motion.div>
+      </div>
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <motion.div  className="info-card">
+      <div  className="info-card">
       <h2><HomeTwoTone/></h2>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
          and make up the bulk of the card's content.
        </p>
-      </motion.div>
+      </div>
 
       </Col>
 
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <motion.div className="info-card">
+      <div className="info-card">
       <h2><HomeTwoTone/></h2>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
          and make up the bulk of the card's content.
        </p>
-      </motion.div>
+      </div>
       </Col>
       </Row>
 </div>

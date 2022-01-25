@@ -80,3 +80,17 @@ code {
   color: gray;
   margin: 2%;
 }
+
+.info-img{
+  /* height: 250px */
+  margin: 0 auto;
+  padding: 15%
+}
+
+.info-item-text{
+  padding: 20% 10%;
+}
+
+.info-item-text h3{
+  color: #0284C7;
+}
