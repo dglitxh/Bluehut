@@ -9,17 +9,17 @@ const Contact = () =>  {
 
     return (
         <div className="container info">
-          <h1> How It Works </h1>
+          <h2> How It Works </h2>
         <Row >
         <Col xs={{span:24}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
-        <div className=" info-item">
+        <div data-aos="zoom-out-up" data-aos-duration="2000" className=" info-item">
 
           <img src={heroSvg} className="img-fluid info-img" alt="" />
 
         </div>
         </Col>
         <Col xs={{span:24}} sm={{span:12}} md={{span:12}} lg={{span:12}} >
-        <div  className="info-item-text p-6 ">
+        <div data-aos="zoom-out-down"   className="info-item-text p-6 ">
         <h3>Super Fast Support </h3>
         <h5>the world’s most popular.</h5>
           <p>
@@ -33,7 +33,7 @@ const Contact = () =>  {
         </Col>
 
         <Col xs={{span:24}} sm={{span:12}} md={{span:12}} lg={{span:12}} >
-        <div  className="info-item-text p-6 ">
+        <div data-aos="zoom-out-down" className="info-item-text p-6 ">
         <h3>Super Fast Support </h3>
         <h5>the world’s most popular.</h5>
           <p>
@@ -46,7 +46,7 @@ const Contact = () =>  {
 
         </Col>
         <Col xs={{span:24}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
-        <div className=" info-item">
+        <div data-aos="zoom-out-up"  data-aos-duration="2000" className=" info-item">
 
           <img src={mySvg} className="img-fluid info-img" alt="" />
 

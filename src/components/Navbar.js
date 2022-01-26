@@ -17,10 +17,11 @@ const Navbar = () => {
     return (
       <nav class="navbar-dark bg-primary navbar navbar-expand-lg">
         <div class="container">
+
           <a href="#pablo" class="navbar-brand">BlueHut Eng.</a>
 
                     <div class="collapse-close col-6">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button onClick={showDrawer} class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
                           </div>

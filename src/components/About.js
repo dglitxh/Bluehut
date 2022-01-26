@@ -13,11 +13,11 @@ const About = () => {
 
     return (
         <div className="Services container mt-20 mb-10">
-        <h1 className="t"> Our Services Include</h1>
+        <h2 className="t"> Our Services Include</h2>
       <Row >
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <div className="info-card">
-        <h2><HomeTwoTone/></h2>
+      <div data-aos="zoom-out-down" className="info-card">
+        <img src="https://img.icons8.com/color/48/000000/engineer-skin-type-5.png"/>
        <h5> Customer Support </h5>
          <p class="card-text">Some quick example text
          to build on the card title
@@ -27,8 +27,8 @@ const About = () => {
       </div>
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div  className="info-card">
-      <h2><HomeTwoTone/></h2>
+      <div data-aos="zoom-out-down" className="info-card">
+      <img src="https://img.icons8.com/color/48/000000/gears.png"/>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
@@ -38,8 +38,10 @@ const About = () => {
 
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div  className="info-card">
-      <h2><HomeTwoTone/></h2>
+      <div
+      data-aos="zoom-out-down"
+       className="info-card">
+      <img src="https://img.icons8.com/color/48/000000/construction-carpenter-ruler.png"/>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
@@ -49,8 +51,8 @@ const About = () => {
       </Col>
 
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <div className="info-card">
-        <h2><HomeTwoTone/></h2>
+      <div data-aos="zoom-out-down" className="info-card">
+        <img src="https://img.icons8.com/color/50/000000/electronics.png"/>
        <h5> Customer Support </h5>
          <p class="card-text">Some quick example text
          to build on the card title
@@ -60,8 +62,8 @@ const About = () => {
       </div>
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div  className="info-card">
-      <h2><HomeTwoTone/></h2>
+      <div data-aos="zoom-out-down" className="info-card">
+      <img src="https://img.icons8.com/color/48/000000/pipelines.png"/>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
@@ -72,8 +74,8 @@ const About = () => {
       </Col>
 
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div className="info-card">
-      <h2><HomeTwoTone/></h2>
+      <div data-aos="zoom-out-down" className="info-card">
+    <img src="https://img.icons8.com/color/48/000000/electricity.png"/>
       <h5> Customer Support </h5>
         <p class="card-text">Some quick example text
         to build on the card title
