@@ -21,7 +21,7 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          A household Name in <span><ReactTyped
+          Cutting edge solutions in <span><ReactTyped
                     strings={['Management',
                     'Consultancy',
                     "Testing",
@@ -33,8 +33,8 @@ const Hero = () =>  {
                 />
           </span> And Everything Engineering
               </h1>
-        <p className=" mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap,
-        the world’s most popular front-end open source toolkit.
+        <p className=" mb-4">We are engineers and strategists. Creators of thoughtful
+         and elegant technology solutions that shape the future.
 
         </p>
           <Button type="primary" size="large" className="hero-button">

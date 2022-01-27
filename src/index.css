@@ -20,7 +20,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+nav{
+  color: black;
+}
 
 .hero{
   display: flex;
@@ -62,7 +64,7 @@ h2:before{
 }
 
 .hero p {
-  font-size: medium;
+  color: gray;
 }
 
 
@@ -94,6 +96,17 @@ h2:before{
   color: blue;
 }
 
+.nav-item a{
+  color: #0284C7;
+  padding: 1%;
+}
+
+.nav-item a:hover
+{
+  color: gray;
+  border-bottom: solid 1px #0284C7;
+}
+
 .info-card{
   padding: 10%;
   color: gray;
@@ -101,13 +114,13 @@ h2:before{
 }
 
 .info-img{
-  /* height: 250px */
+  height: 450px;
   margin: 0 auto;
-  padding: 15%
+  padding: 10%
 }
 
 .info-item-text{
-  padding: 20% 10%;
+  padding: 15% 10%;
   color: grey
 }
 
