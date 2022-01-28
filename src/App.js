@@ -39,8 +39,8 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
-      <Projects/>
       <Contact/>
+      <Projects/>
       <Footer/>
     </div>
   );

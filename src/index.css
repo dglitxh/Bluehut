@@ -127,3 +127,23 @@ h2:before{
 .info-item-text h3{
   color: #0284C7;
 }
+
+.footer-text{
+  color: gray;
+  font-size: medium;
+}
+
+.pic-card-1{
+  background-image: url('./components/utils/svgs/Waimakariri.svg');
+  color: aliceblue;
+  background-color: #0284C7;
+}
+
+.pic-card-2{
+  background-image: url('./components/utils/svgs/Aare.svg');
+
+}
+
+.pic-card-3{
+  background-image: url('./components/utils/svgs/Aare.svg');
+}
