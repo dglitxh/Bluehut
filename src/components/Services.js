@@ -1,18 +1,12 @@
 import { Card, Row, Col } from 'antd';
-import cardimg from './utils/svgs/thoughts.svg'
-import cardimg2 from './utils/svgs/town.svg'
-import cardimg3 from './utils/svgs/rename.svg'
-import cardimg4 from './utils/svgs/upgrade.svg'
-import { HomeTwoTone } from '@ant-design/icons'
-import { motion } from 'framer-motion'
 
 
 const { Meta } = Card;
 
-const About = () => {
+const Services = () => {
 
     return (
-        <div className="Services container mt-20 mb-10">
+        <div id="services" className="Services container mt-20 mb-10">
         <h2 className="t"> Our Services Include</h2>
       <Row >
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
@@ -20,7 +14,7 @@ const About = () => {
         <img src="https://img.icons8.com/color/48/000000/engineer-skin-type-5.png"/>
        <h5> Engineering Consultancy </h5>
          <p class="card-text">We provide consultancy and
-         quality assurance services using well defined procedures
+          quality assurance services using well defined procedures
           and a systematic approach by quantifying risk,
           developing effective mitigation strategies,
           performing defect identification and risk assessment.
@@ -69,7 +63,7 @@ const About = () => {
       <img src="https://img.icons8.com/color/48/000000/pipelines.png"/>
       <h5> 5G services </h5>
         <p class="card-text">
-        We're a group of technical experts focused on 5G services.
+          Our group of technical experts also offer 5G services.
          We specialize in providing end-to-end 5G services
          from design and development, to support and maintenance.
        </p>
@@ -93,4 +87,4 @@ const About = () => {
 }
 
 
-export default About
+export default Services

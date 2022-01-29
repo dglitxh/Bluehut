@@ -15,9 +15,9 @@ const Footer = () => {
           };
     return (
         <div>
-        <footer class="container">
+        <footer className="container">
         <hr/>
-            <div class="float-end">
+            <div className="float-end">
             <a href="#"><img src="https://img.icons8.com/color-glass/28/000000/facebook-new.png"/></a>
             <a href="#"><img src="https://img.icons8.com/color-glass/28/000000/instagram-new.png"/></a>
             <a href="#"><img src="https://img.icons8.com/color-glass/28/000000/twitter.png"/></a>

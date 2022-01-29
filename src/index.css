@@ -134,16 +134,61 @@ h2:before{
 }
 
 .pic-card-1{
-  background-image: url('./components/utils/svgs/Waimakariri.svg');
+  background-image: url('./components/utils/svgs/Mataura.svg');
   color: aliceblue;
   background-color: #0284C7;
 }
+.pic-card-1 h3{
+  color: white;
+}
 
 .pic-card-2{
-  background-image: url('./components/utils/svgs/Aare.svg');
+  background-image: url('./components/utils/svgs/Doubs.svg');
+  background-position: left;
+
+
 
 }
 
+.pic-card-2 h3{
+color: white;
+}
+
+
 .pic-card-3{
-  background-image: url('./components/utils/svgs/Aare.svg');
+  background-image: url('./components/utils/svgs/Doubs.svg');
+
+}
+.pic-card-3 h3{
+color: white;
+}
+
+/* #custom-cards{
+  background-image: url('./components/utils/svgs/Waiau.svg');
+} */
+#gmap_canvas{
+ width: 80vw;
+ height: 60vh;
+}
+
+.contact-form{
+ margin: 4em 0;
+ position: relative;
+}
+
+.contact-form h1{
+ padding:2em 1px;
+ color: #0284C7;
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background: #0284C7;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
 }

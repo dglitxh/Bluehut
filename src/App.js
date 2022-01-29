@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
-import About from "./components/About"
+import Services from "./components/Services"
 import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Hero/>
-      <About/>
+      <Services/>
       <Skills/>
       <Contact/>
       <Projects/>
