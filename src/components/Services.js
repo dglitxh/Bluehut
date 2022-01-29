@@ -1,7 +1,5 @@
-import { Card, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 
-
-const { Meta } = Card;
 
 const Services = () => {
 
@@ -11,7 +9,7 @@ const Services = () => {
       <Row >
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
       <div data-aos="zoom-out-down" className="info-card">
-        <img src="https://img.icons8.com/color/48/000000/engineer-skin-type-5.png"/>
+        <img alt="icon" src="https://img.icons8.com/color/48/000000/engineer-skin-type-5.png"/>
        <h5> Engineering Consultancy </h5>
          <p class="card-text">We provide consultancy and
           quality assurance services using well defined procedures
@@ -23,7 +21,7 @@ const Services = () => {
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
       <div data-aos="zoom-out-down" className="info-card">
-      <img src="https://img.icons8.com/color/48/000000/gears.png"/>
+      <img alt="icon" src="https://img.icons8.com/color/48/000000/gears.png"/>
       <h5> Fibre Services </h5>
         <p class="card-text">One of the country's most reliable Fiber
          Internet services! We live and breathe fiber.
@@ -37,7 +35,7 @@ const Services = () => {
       <div
       data-aos="zoom-out-down"
        className="info-card">
-      <img src="https://img.icons8.com/color/48/000000/construction-carpenter-ruler.png"/>
+      <img alt="icon" src="https://img.icons8.com/color/48/000000/construction-carpenter-ruler.png"/>
       <h5> Remodelling of existing structures </h5>
         <p class="card-text">We remodel existing structures and create comfortable,
          functional, affordable and aesthetically pleasing spaces for
@@ -48,7 +46,7 @@ const Services = () => {
 
       <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
       <div data-aos="zoom-out-down" className="info-card">
-        <img src="https://img.icons8.com/color/50/000000/electronics.png"/>
+        <img alt="icon" src="https://img.icons8.com/color/50/000000/electronics.png"/>
        <h5> Electrical wiring and design </h5>
          <p class="card-text">We are a complete solution for
          your electrical wiring and design needs.
@@ -60,7 +58,7 @@ const Services = () => {
       </Col>
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
       <div data-aos="zoom-out-down" className="info-card">
-      <img src="https://img.icons8.com/color/48/000000/pipelines.png"/>
+      <img alt="icon" src="https://img.icons8.com/color/48/000000/pipelines.png"/>
       <h5> 5G services </h5>
         <p class="card-text">
           Our group of technical experts also offer 5G services.
@@ -73,7 +71,7 @@ const Services = () => {
 
       <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
       <div data-aos="zoom-out-down" className="info-card">
-    <img src="https://img.icons8.com/color/48/000000/electricity.png"/>
+    <img alt="icon" src="https://img.icons8.com/color/48/000000/electricity.png"/>
       <h5> Electrical Installation </h5>
         <p class="card-text">
        We do electrical installations, we are well equipped to do any kind of work in the electrical field
