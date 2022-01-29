@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
-import Contact from "./components/Contact";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Services from "./components/Services"
 import "./index.css"
 import AOS from 'aos'
@@ -38,9 +38,9 @@ function App() {
       <Navbar/>
       <Hero/>
       <Services/>
+      <About/>
       <Skills/>
       <Contact/>
-      <Projects/>
       <Footer/>
     </div>
   );

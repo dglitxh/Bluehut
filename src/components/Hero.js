@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Row, Col } from 'antd'
+import { Row, Col } from 'antd'
 import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
 import heroSvg from './utils/svgs/build.svg'
@@ -10,7 +10,7 @@ import heroSvg from './utils/svgs/build.svg'
 const Hero = () =>  {
 
     return (
-        <div className='container'>
+        <div id="hero" className='container'>
     <Row >
       <Col sm={{span:24}} lg={{span:12}} md={{span:24}}>
 
@@ -37,9 +37,11 @@ const Hero = () =>  {
          and elegant technology solutions that shape the future.
 
         </p>
-          <Button type="primary" size="large" className="hero-button">
+        <a href="#services">
+          <button className="hero-button btn btn-primary btn-large">
             Start Exploring
-          </Button>
+          </button>
+          </a>
       </motion.div>
       </Col>
       <Col xs={{span:0}} sm={{span:0}} md={{span:0}} lg={{span:12}} >
