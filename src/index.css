@@ -91,7 +91,7 @@ h2:before{
   flex-direction: column;
 }
 
-.menu-items: hover,
+.menu-items:hover,
 :active{
   color: blue;
 }
