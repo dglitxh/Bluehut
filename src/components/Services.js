@@ -36,7 +36,7 @@ const Services = () => {
               <img alt="icon" src={service.icon}/>
             <h5> {service.heading} </h5>
               <p class="card-text">{service.text.slice(0,80)+"...."}</p>
-              <button onClick={() => openModal(service.id)} className='btn btn-primary'>read more</button>
+              <button onClick={() => openModal(service.id)} className='btn btn-outline-primary'>Read more</button>
       </div>
 
       </Col>
