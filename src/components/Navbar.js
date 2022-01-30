@@ -28,8 +28,8 @@ const Navbar = () => {
                         <div className="navbar-collapse collapse">
                           <ul className="navbar-nav ms-auto mb-1 mb-lg-0 navbar-nav">
                             <li className="nav-item"><a href="#hero" className="nav-link">Home</a></li>
-                            <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
                             <li className="nav-item"><a href="#services" className="nav-link">Services</a></li>
+                            <li className="nav-item"><a href="#about" className="nav-link">About</a></li>
                             <li className="nav-item"><a href="#contact" className="nav-link">Contact</a></li>
 
                             </ul>
