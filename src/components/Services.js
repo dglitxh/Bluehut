@@ -1,85 +1,60 @@
-import { Row, Col } from 'antd';
+import { Row, Col, Modal } from 'antd';
+import { useState } from 'react';
+import { services } from './assets/data'
 
 
 const Services = () => {
 
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalInfo, setModalInfo] = useState({})
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  const openModal = (id) => {
+    const modalInfo = services.find((el) => id === el.id)
+    setModalInfo(modalInfo)
+    showModal()
+  }
     return (
         <div id="services" className="Services container mt-20 mb-10">
         <h2 className="t"> Our Services Include</h2>
       <Row >
-      <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <div data-aos="zoom-out-down" className="info-card">
-        <img alt="icon" src="https://img.icons8.com/color/48/000000/engineer-skin-type-5.png"/>
-       <h5> Engineering Consultancy </h5>
-         <p class="card-text">We provide consultancy and
-          quality assurance services using well defined procedures
-          and a systematic approach by quantifying risk,
-          developing effective mitigation strategies,
-          performing defect identification and risk assessment.
-          </p>
-      </div>
-      </Col>
-      <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div data-aos="zoom-out-down" className="info-card">
-      <img alt="icon" src="https://img.icons8.com/color/48/000000/gears.png"/>
-      <h5> Fibre Services </h5>
-        <p class="card-text">One of the country's most reliable Fiber
-         Internet services! We live and breathe fiber.
-         Our mission is to make fiber reliable, affordable, and
-        fast for everyone.
-       </p>
+      {services.map((service) => {
+        return(
+          <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+            <div key={service.id} data-aos="zoom-out-down" className="info-card">
+              <img alt="icon" src={service.icon}/>
+            <h5> {service.heading} </h5>
+              <p class="card-text">{service.text.slice(0,80)+"...."}</p>
+              <button onClick={() => openModal(service.id)} className='btn btn-primary'>read more</button>
       </div>
 
       </Col>
-      <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div
-      data-aos="zoom-out-down"
-       className="info-card">
-      <img alt="icon" src="https://img.icons8.com/color/48/000000/construction-carpenter-ruler.png"/>
-      <h5> Remodelling of existing structures </h5>
-        <p class="card-text">We remodel existing structures and create comfortable,
-         functional, affordable and aesthetically pleasing spaces for
-         our clients.
-       </p>
-      </div>
-      </Col>
-
-      <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-      <div data-aos="zoom-out-down" className="info-card">
-        <img alt="icon" src="https://img.icons8.com/color/50/000000/electronics.png"/>
-       <h5> Electrical wiring and design </h5>
-         <p class="card-text">We are a complete solution for
-         your electrical wiring and design needs.
-         We offer electrical wiring and design services
-         to businesses and residential customers.
-        </p>
-
-      </div>
-      </Col>
-      <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div data-aos="zoom-out-down" className="info-card">
-      <img alt="icon" src="https://img.icons8.com/color/48/000000/pipelines.png"/>
-      <h5> 5G services </h5>
-        <p class="card-text">
-          Our group of technical experts also offer 5G services.
-         We specialize in providing end-to-end 5G services
-         from design and development, to support and maintenance.
-       </p>
-      </div>
-
-      </Col>
-
-      <Col xs={{span:24}} sm={{span:12}} md={{span:8}} lg={{span:8}} >
-      <div data-aos="zoom-out-down" className="info-card">
-    <img alt="icon" src="https://img.icons8.com/color/48/000000/electricity.png"/>
-      <h5> Electrical Installation </h5>
-        <p class="card-text">
-       We do electrical installations, we are well equipped to do any kind of work in the electrical field
-        and we can install any type of electrical systems.
-       </p>
-      </div>
-      </Col>
+        )
+      })
+     }
+      
       </Row>
+
+      <Modal 
+          title={<h4>{modalInfo.heading}</h4>}
+          visible={isModalVisible} 
+          onOk={handleOk} 
+          onCancel={handleCancel}
+      >
+        <p>{modalInfo.text}</p>
+
+      </Modal>
 </div>
     )
 }

@@ -67,7 +67,9 @@ h2:before{
   color: gray;
 }
 
-
+.btn{
+  background-color: #0284C7;
+}
 
 .drawer-items{
   color: black;
