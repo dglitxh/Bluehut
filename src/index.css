@@ -91,11 +91,6 @@ h2:before{
   flex-direction: column;
 }
 
-.menu-items:hover,
-:active{
-  color: blue;
-}
-
 .nav-item a{
   color: #0284C7;
   padding: 1%;
