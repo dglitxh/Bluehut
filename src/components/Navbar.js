@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="  navbar navbar-expand-lg">
         <div className="container">
 
-          <a href="#hero" className="navbar-brand">BlueHut Engineering.</a>
+          <a href="#hero" className="navbar-brand">BlueHut Engineering</a>
 
                 <div className="collapse-close ">
                   <button onClick={showDrawer} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
