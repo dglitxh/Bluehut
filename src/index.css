@@ -67,7 +67,7 @@ h2:before{
   color: gray;
 }
 
-.btn{
+.btn-primary{
   background-color: #0284C7;
 }
 
@@ -131,7 +131,7 @@ h2:before{
 }
 
 .pic-card-1{
-  background-image: url('./components/utils/svgs/Mataura.svg');
+  background-image: url('./components/utils/svgs/Doubs.svg');
   color: aliceblue;
   background-color: #0284C7;
 }
@@ -142,9 +142,7 @@ h2:before{
 .pic-card-2{
   background-image: url('./components/utils/svgs/Doubs.svg');
   background-position: left;
-
-
-
+  background-color: #0284C7;
 }
 
 .pic-card-2 h3{
@@ -154,7 +152,7 @@ color: white;
 
 .pic-card-3{
   background-image: url('./components/utils/svgs/Doubs.svg');
-
+  background-color: #0284C7;
 }
 .pic-card-3 h3{
 color: white;

@@ -62,7 +62,7 @@ const Contact = ( ) => {
 
       <div data-aos="zoom-out-up " data-aos-duration="2000" className="map">
 
-      <div className="container">
+      <div className="container-fluid">
       <div className="mapouter">
       <div className="gmap_canvas embed-responsive embed-responsive-1by1"><iframe title="gMap" className="embed-responsive-item" id="gmap_canvas"
       src="https://maps.google.com/maps?q=asofoatse%20street%20East%20legon&t=&z=13&ie=UTF8&iwloc=&output=embed"

@@ -21,7 +21,7 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          Cutting edge solutions in <span><ReactTyped
+          Cutting edge solutions in  <span><ReactTyped
                     strings={['Management',
                     'Consultancy',
                     "Testing",

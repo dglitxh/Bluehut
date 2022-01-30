@@ -19,7 +19,7 @@ const About = () =>  {
         </Col>
         <Col xs={{span:24}} sm={{span:12}} md={{span:12}} lg={{span:12}} >
         <div data-aos="zoom-out-down"   className="info-item-text p-6 ">
-        <h3>What we Are About </h3>
+        <h3>Background</h3>
           <p>
           BlueHut Engineering has provided multi-discipline
            engineering services to industrial and commercial

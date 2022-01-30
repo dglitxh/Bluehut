@@ -40,7 +40,7 @@ export const services = [
     },
 
     {
-        "heading": "5G services",
+        "heading": "5G Services",
         "icon": "https://img.icons8.com/color/48/000000/pipelines.png",
         "text": `Our group of technical experts also offer 5G services.
                 We specialize in providing end-to-end 5G services
