@@ -1,4 +1,4 @@
-import { Row, Col, Modal, Button } from 'antd';
+import { Row, Col, Modal } from 'antd';
 import { useState } from 'react';
 import { services } from './assets/data'
 
