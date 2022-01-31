@@ -1,4 +1,4 @@
-import { Row, Col, Modal } from 'antd';
+import { Row, Col, Modal, Button } from 'antd';
 import { useState } from 'react';
 import { services } from './assets/data'
 
@@ -51,6 +51,7 @@ const Services = () => {
           visible={isModalVisible} 
           onOk={handleOk} 
           onCancel={handleCancel}
+          footer={<button onClick={handleOk} className='btn btn-primary'>Ok</button>}
       >
         <p>{modalInfo.text}</p>
 
