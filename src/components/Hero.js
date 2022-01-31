@@ -21,7 +21,9 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          Cutting edge Engineering solutions in<span> <ReactTyped
+          Cutting edge solutions 
+          <br></br> in
+          <span> <ReactTyped
                     strings={['Management',
                     'Consultancy',
                     "Testing",
@@ -32,7 +34,8 @@ const Hero = () =>  {
                     loop
                 />
           </span>
-              </h1>
+          <br></br>
+              and everything engineering</h1>
         <p className=" mb-4">We are engineers and strategists. Creators of thoughtful
          and elegant technology solutions that shape the future.
 
