@@ -15,7 +15,7 @@ const Skills = () => {
       <div className="col">
         <div data-aos="zoom-out-up" className="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg pic-card-2" >
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold"> Best customer service and support on the market.</h3>
+            <h4 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold"> Best customer service and support on the market.</h4>
 
           </div>
         </div>
@@ -24,7 +24,7 @@ const Skills = () => {
       <div className="col">
         <div data-aos="zoom-out-up" className="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg pic-card-3" >
           <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">A dedication in nurturing long term client relationships.</h3>
+            <h4 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">A dedication in nurturing long term client relationships.</h4>
 
           </div>
         </div>
@@ -33,10 +33,10 @@ const Skills = () => {
       <div className="col">
         <div data-aos="zoom-out-up" className="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg pic-card-1" >
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">Integrated engineering 
+            <h4 className="pt-2 mt-5 mb-4 display-6 lh-1 fw-bold">Integrated engineering 
             solutions for all
             aspects of projects from commencement to completion.
-            </h3>
+            </h4>
 
           </div>
         </div>
