@@ -26,8 +26,8 @@ const Services = () => {
     showModal()
   }
     return (
-        <div id="services" className="Services container mt-20 mb-10">
-        <h2 className="t"> Our Services Include</h2>
+        <div id="services" className="Services container mt-5 mb-10">
+        <h2 className="text-center"> Our Services Include</h2>
       <Row >
       {services.map((service) => {
         return(

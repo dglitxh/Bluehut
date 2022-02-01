@@ -9,20 +9,32 @@ import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { aos_settings } from './components/assets/settings'
+import { HashRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 
 
 AOS.init(aos_settings);
 function App() {
   return (
     <div className="App">
-
-      <Navbar/>
-      <Hero/>
-      <Services/>
-      <Skills/>
-      <About/>
-      <Contact/>
-      <Footer/>
+<HashRouter>
+  <React.Fragment>
+  <Navbar/>
+    <Routes>
+      <Route path="/" element={ 
+      <div>
+        <Hero/>
+        <Skills/>
+        </div>
+      }
+      />
+      <Route path="/services" element={<Services/>}/>
+      <Route path="/about" element={ <About/>}/>
+      <Route path="/contact" element={ <Contact/>}/>
+    </Routes>
+    <Footer/>
+  </React.Fragment>
+</HashRouter>
     </div>
   );
 }

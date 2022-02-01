@@ -3,6 +3,7 @@ import { Row, Col } from 'antd'
 import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
 import heroSvg from './utils/svgs/build.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -10,7 +11,7 @@ import heroSvg from './utils/svgs/build.svg'
 const Hero = () =>  {
 
     return (
-        <div id="hero" className='container'>
+        <div id="hero" className='container mt-5'>
     <Row >
       <Col sm={{span:24}} lg={{span:12}} md={{span:24}}>
 
@@ -40,11 +41,11 @@ const Hero = () =>  {
          and elegant technology solutions that shape the future.
 
         </p>
-        <a href="#services">
+        <Link to={"/services"}>
           <button className="hero-button btn btn-primary btn-large">
             Start Exploring
           </button>
-          </a>
+          </Link>
       </motion.div>
       </Col>
       <Col xs={{span:0}} sm={{span:0}} md={{span:0}} lg={{span:12}} >

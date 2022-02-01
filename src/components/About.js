@@ -7,8 +7,8 @@ import mySvg from './utils/svgs/thoughts.svg'
 const About = () =>  {
 
     return (
-        <div id="about" className="container info">
-          <h2> About Us</h2>
+        <div id="about" className="container info mt-5">
+          <h2 className='text-center'> About Us</h2>
         <Row >
         <Col xs={{span:24}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
         <div data-aos="zoom-out-up" data-aos-duration="2000" className=" info-item">
