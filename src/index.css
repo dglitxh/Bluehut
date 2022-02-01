@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import '~antd/dist/antd.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap');
+
+
 
 
 *{
@@ -21,7 +26,11 @@ code {
     monospace;
 }
 
-
+@media screen and (max-width: 767px) {
+  .hero h1{
+    font-size: 60%;
+  }
+}
 .hero{
   display: flex;
   justify-content: center;
@@ -31,12 +40,15 @@ code {
   /* color: #63AFFF; */
   /*color: aliceblue;*/
   margin-bottom: 15%;
+  font-size: 300%;
 }
-h2 {
+
+h2, h3{
     font-weight: 300;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
+    font-size: 180%;
 }
 h2:before{
     content: "";
@@ -184,4 +196,8 @@ color: white;
 .contact-form .right .form-control::placeholder{
  color: #888;
  font-size: 16px;
+}
+
+.social-icons{
+  display: inline-flex;
 }

@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Services from "./components/Services"
+import Pricing from "./components/Pricing"
 import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -21,6 +22,7 @@ function App() {
       <Services/>
       <Skills/>
       <About/>
+      <Pricing/>
       <Contact/>
       <Footer/>
     </div>
