@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import '~antd/dist/antd.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap');
+
+
 
 
 *{
@@ -21,24 +26,41 @@ code {
     monospace;
 }
 
-
+@media screen and (max-width: 767px) {
+  .hero h1{
+    font-size: 60%;
+  }
+}
 .hero{
   display: flex;
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 8%;
   /* color: #63AFFF; */
   /*color: aliceblue;*/
   margin-bottom: 15%;
+<<<<<<< HEAD
   font-size: 250%;
+=======
+  font-size: 320%;
+>>>>>>> main
 }
-h2 {
+
+#hero{
+  margin-top: 5%;
+}
+
+h2, h3{
     font-weight: 300;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
+<<<<<<< HEAD
     font-size: 200%;
+=======
+    font-size: 180%;
+>>>>>>> main
 }
 h2:before{
     content: "";
@@ -93,7 +115,12 @@ h2:before{
   flex-direction: column;
 }
 
-.nav-item a{
+.menu-items a h3:hover{
+  color: #0284C7;
+  border-bottom: solid 1px gray;
+}
+
+.nav-item a {
   color: #0284C7;
   padding: 1%;
 }
@@ -186,4 +213,30 @@ color: white;
 .contact-form .right .form-control::placeholder{
  color: #888;
  font-size: 16px;
+}
+
+.social-icons{
+  display: inline-flex;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  font-size: inherit;
+  color: currentColor;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover {
+  left: 10px;
+  z-index: 2;
+  color: white;
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover {
+  right: 10px;
+  z-index: 2;
+  color: white;
 }
