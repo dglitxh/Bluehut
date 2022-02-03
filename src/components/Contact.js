@@ -1,10 +1,31 @@
 import { message } from 'antd'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion'
 
 
 const Contact = ( ) => {
   const form = useRef();
+
+
+  const containerVariants = {
+  hidden: {
+    x: '100vw'
+  },
+  visible: {
+    x: 0,
+    transition: {
+    type: 'spring',
+
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+  };
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,7 +45,12 @@ const Contact = ( ) => {
   };
 
     return (
-      <div id='contact' className="container info mt-5">
+      <motion.div id='contact' className="container info mt-5"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      >
         <h2> Reach Us </h2>
         <div class="contact-form" id="contact">
             <div class="container">
@@ -74,7 +100,7 @@ const Contact = ( ) => {
       </div>
 
       </div>
-        </div>
+        </motion.div>
     )
 }
 

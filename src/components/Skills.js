@@ -1,11 +1,31 @@
 
 import React from 'react';
+import { motion } from 'framer-motion'
 
 
 const Skills = () => {
 
+  const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 1.5, duration: 1.5 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut' }
+  }
+};
+
     return (
-<div id='skills'>
+<motion.div id='skills'
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+  >
 <div className=" px-4 py-5" id="custom-cards">
 <div className="container">
     <h2 className="pb-2 ">What We Offer</h2>
@@ -62,7 +82,7 @@ const Skills = () => {
 </div>
     </div>
   </div>
-</div>
+</motion.div>
     )
 }
 

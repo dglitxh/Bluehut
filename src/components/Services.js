@@ -1,12 +1,30 @@
 import { Row, Col, Modal } from 'antd';
 import { useState } from 'react';
 import { services } from './assets/data'
-
+import { motion } from 'framer-motion'
 
 const Services = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalInfo, setModalInfo] = useState({})
+
+  const containerVariants = {
+  hidden: {
+    x: '100vw'
+  },
+  visible: {
+    x: 0,
+    transition: {
+    type: 'spring',
+
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+};
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -26,7 +44,12 @@ const Services = () => {
     showModal()
   }
     return (
-        <div id="services" className="Services container mt-5 mb-10">
+        <motion.div id="services" className="Services container mt-5 mb-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit={{ x: -300, opacity: 0, delay: 3 }}
+      >
         <h2 className="text-center"> Our Services Include</h2>
       <Row >
       {services.map((service) => {
@@ -43,20 +66,20 @@ const Services = () => {
         )
       })
      }
-      
+
       </Row>
 
-      <Modal 
+      <Modal
           title={<h4>{modalInfo.heading}</h4>}
-          visible={isModalVisible} 
-          onOk={handleOk} 
+          visible={isModalVisible}
+          onOk={handleOk}
           onCancel={handleCancel}
           footer={<button onClick={handleOk} className='btn btn-primary'>Ok</button>}
       >
         <p>{modalInfo.text}</p>
 
       </Modal>
-</div>
+</motion.div>
     )
 }
 

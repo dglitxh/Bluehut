@@ -2,12 +2,36 @@
 import { Col, Row } from 'antd'
 import heroSvg from './utils/svgs/blocks.svg'
 import mySvg from './utils/svgs/thoughts.svg'
+import { motion  } from 'framer-motion'
 
 
 const About = () =>  {
 
+  const containerVariants = {
+  hidden: {
+    x: '100vw'
+  },
+  visible: {
+    x: 0,
+    transition: {
+    type: 'spring',
+
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {delay: 1.5, ease: 'easeInOut' }
+  }
+};
+
     return (
-        <div id="about" className="container info mt-5">
+        <motion.div id="about" className="container info mt-5"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        >
           <h2 className='text-center'> About Us</h2>
         <Row >
         <Col xs={{span:24}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
@@ -62,7 +86,7 @@ const About = () =>  {
         </Col>
 
         </Row>
-        </div>
+        </motion.div>
 
     )
 }

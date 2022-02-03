@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Services from "./components/Services"
+import { AnimatePresence } from 'framer-motion';
 import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -20,8 +21,9 @@ function App() {
 <HashRouter>
   <React.Fragment>
   <Navbar/>
+  <AnimatePresence exitBeforeEnter>
     <Routes>
-      <Route path="/" element={ 
+      <Route path="/" element={
       <div>
         <Hero/>
         <Skills/>
@@ -32,6 +34,7 @@ function App() {
       <Route path="/about" element={ <About/>}/>
       <Route path="/contact" element={ <Contact/>}/>
     </Routes>
+    </AnimatePresence>
     <Footer/>
   </React.Fragment>
 </HashRouter>

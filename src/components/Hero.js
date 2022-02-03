@@ -10,8 +10,23 @@ import { Link } from 'react-router-dom'
 
 const Hero = () =>  {
 
+
+  const containerVariants = {
+  visible: {
+    transition: { delay: 1.5, duration: 1.5 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut', delay: 1.5, duration: 1.5 }
+  }
+};
+
     return (
-        <div id="hero" className='container mt-5'>
+        <motion.div id="hero" className='container mt-5'
+      variants={containerVariants}
+      animate="visible"
+      exit="exit"
+      >
     <Row >
       <Col sm={{span:24}} lg={{span:12}} md={{span:24}}>
 
@@ -22,7 +37,7 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          Cutting edge solutions 
+          Cutting edge solutions
           <br></br> in
           <span> <ReactTyped
                     strings={['Management',
@@ -57,7 +72,7 @@ const Hero = () =>  {
       </div>
       </Col>
     </Row>
-        </div>
+        </motion.div>
     )
 }
 
