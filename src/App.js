@@ -5,11 +5,8 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Services from "./components/Services"
-<<<<<<< HEAD
-import { AnimatePresence } from 'framer-motion';
-=======
 import Pricing from "./components/Pricing"
->>>>>>> main
+import { AnimatePresence } from 'framer-motion'
 import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -22,7 +19,6 @@ AOS.init(aos_settings);
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
 <HashRouter>
   <React.Fragment>
   <Navbar/>
@@ -43,17 +39,6 @@ function App() {
     <Footer/>
   </React.Fragment>
 </HashRouter>
-=======
-
-      <Navbar/>
-      <Hero/>
-      <Services/>
-      <Skills/>
-      <About/>
-      <Pricing/>
-      <Contact/>
-      <Footer/>
->>>>>>> main
     </div>
   );
 }

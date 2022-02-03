@@ -40,11 +40,7 @@ code {
   /* color: #63AFFF; */
   /*color: aliceblue;*/
   margin-bottom: 15%;
-<<<<<<< HEAD
-  font-size: 250%;
-=======
   font-size: 320%;
->>>>>>> main
 }
 
 #hero{
@@ -56,11 +52,7 @@ h2, h3{
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
-<<<<<<< HEAD
-    font-size: 200%;
-=======
     font-size: 180%;
->>>>>>> main
 }
 h2:before{
     content: "";
