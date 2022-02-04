@@ -20,7 +20,7 @@ const Loader = (props) => {
     },
   }
   return (
-    <div className="mx-5">
+    <div className="ml-2 mt-4">
     <Link to={loc} className="text-gray-600  py-5 my-5">
       {text}
       <motion.img className="loader"
