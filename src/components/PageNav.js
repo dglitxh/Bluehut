@@ -13,7 +13,7 @@ const Loader = (props) => {
       y: [0, -30],
       transition: {
         x: {
-          tween: Infinity,
+          yoyo: Infinity,
           duration: 0.8,
         },
       }
