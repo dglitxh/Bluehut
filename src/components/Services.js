@@ -12,15 +12,15 @@ const Services = () => {
   const containerVariants = {
     hidden: {
       opacity: 0,
-      x: '100vw'
+      y: '-100vh'
     },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: { type: 'spring', duration: 4 }
     },
     exit: {
-      x: "-100vh",
+      x: "-100vw",
       transition: { ease: 'easeInOut' }
     }
 
@@ -79,7 +79,7 @@ const Services = () => {
         <p>{modalInfo.text}</p>
 
       </Modal>
-      <PageNav loc={'/about'} text="Next page"/>
+      <PageNav loc={'/services'} text="Next page"/>
 </motion.div>
     )
 }

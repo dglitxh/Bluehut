@@ -7,12 +7,13 @@ const Pricing = () => {
       const containerVariants = {
         hidden: {
         opacity: 0,
-        x: '100vw'
+        scale: 0.5
       },
       visible: {
         opacity: 1,
         x: 0,
-        transition: { type: 'spring', duration: 4  }
+        scale: 1,
+        transition: {  duration: 1  }
       },
       exit: {
         x: "-100vh",

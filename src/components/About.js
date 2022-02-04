@@ -86,7 +86,7 @@ const About = () =>  {
 
         </Row>
 
-          <PageNav loc={'/pricing'} text="Next page"/>
+          <PageNav loc={'/services'} text="Next page"/>
         </motion.div>
 
     )
