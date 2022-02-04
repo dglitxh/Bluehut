@@ -16,7 +16,7 @@ const Contact = ( ) => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { type: 'spring', delay: 1 }
+      transition: { type: 'spring', duration: 4  }
     },
     exit: {
       y: "-100vh",
