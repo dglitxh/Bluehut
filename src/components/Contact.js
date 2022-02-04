@@ -9,21 +9,19 @@ const Contact = ( ) => {
 
 
   const containerVariants = {
-  hidden: {
-    x: '100vw'
-  },
-  visible: {
-    x: 0,
-    transition: {
-    type: 'spring',
-
-    transition: {delay: 1.5, ease: 'easeInOut' }
-  }
-  },
-  exit: {
-    x: '-100vw',
-    transition: {delay: 1.5, ease: 'easeInOut' }
-  }
+    hidden: {
+      opacity: 0,
+      x: '100vw'
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: 'spring', delay: 1 }
+    },
+    exit: {
+      y: "-100vh",
+      transition: { ease: 'easeInOut' }
+    }
   };
 
 
@@ -57,7 +55,7 @@ const Contact = ( ) => {
         <form ref={form} onSubmit={sendEmail}>
          <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1 className="text-3xl">Get in Touch</h1>
+            <h1>Get in Touch</h1>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 right ">
              <div class="form-group mb-3">

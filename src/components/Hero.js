@@ -12,18 +12,23 @@ const Hero = () =>  {
 
 
   const containerVariants = {
+    hidden: {
+    y: '100vh',
+  },
   visible: {
-    transition: { delay: 1.5, duration: 1.5 }
+    y: 0,
+    transition: { delay: 0.2, duration: 0.5 }
   },
   exit: {
     x: "-100vh",
-    transition: { ease: 'easeInOut', delay: 1.5, duration: 1.5 }
+    transition: { ease: 'easeInOut' }
   }
 };
 
     return (
         <motion.div id="hero" className='container mt-5'
       variants={containerVariants}
+      initial='hidden'
       animate="visible"
       exit="exit"
       >

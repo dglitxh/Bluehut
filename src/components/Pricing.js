@@ -1,10 +1,32 @@
-
+import React from 'react';
+import { motion } from 'framer-motion'
 
 
 const Pricing = () => {
+      const containerVariants = {
+        hidden: {
+        opacity: 0,
+        x: '100vw'
+      },
+      visible: {
+        opacity: 1,
+        x: 0,
+        transition: { type: 'spring', delay: 1 }
+      },
+      exit: {
+        x: "-100vh",
+        transition: { ease: 'easeInOut' }
+      }
+    };
 
   return (
-    <section className="container">
+    <motion.section className="container"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        >
+
       <h2> Pricing </h2>
             <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
               <div>
@@ -325,7 +347,7 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </motion.section>
   )
 }
 

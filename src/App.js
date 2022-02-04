@@ -11,20 +11,24 @@ import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { aos_settings } from './components/assets/settings'
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import React from "react";
 
 
 AOS.init(aos_settings);
+
+
 function App() {
+  const location = useLocation();
+
+
   return (
     <div className="App">
-<HashRouter>
   <React.Fragment>
   <Navbar/>
   <AnimatePresence exitBeforeEnter>
-    <Routes>
-      <Route path="/" element={
+    <Routes location={location} key={location.key}>
+      <Route path="/home" element={
       <div>
         <Hero/>
         <Skills/>
@@ -34,11 +38,12 @@ function App() {
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={ <About/>}/>
       <Route path="/contact" element={ <Contact/>}/>
+      <Route path="/pricing" element={<Pricing/>}/>
     </Routes>
     </AnimatePresence>
     <Footer/>
   </React.Fragment>
-</HashRouter>
+
     </div>
   );
 }

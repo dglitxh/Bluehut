@@ -9,21 +9,20 @@ const Services = () => {
   const [modalInfo, setModalInfo] = useState({})
 
   const containerVariants = {
-  hidden: {
-    x: '100vw'
-  },
-  visible: {
-    x: 0,
-    transition: {
-    type: 'spring',
+    hidden: {
+      opacity: 0,
+      x: '100vw'
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { type: 'spring', delay: 1 }
+    },
+    exit: {
+      x: "-100vh",
+      transition: { ease: 'easeInOut' }
+    }
 
-    transition: {delay: 1.5, ease: 'easeInOut' }
-  }
-  },
-  exit: {
-    x: '-100vw',
-    transition: {delay: 1.5, ease: 'easeInOut' }
-  }
 };
 
   const showModal = () => {
@@ -48,7 +47,7 @@ const Services = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        exit={{ x: -300, opacity: 0, delay: 3 }}
+        exit="exit"
       >
         <h2 className="text-center"> Our Services Include</h2>
       <Row >
