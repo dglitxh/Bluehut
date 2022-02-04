@@ -28,7 +28,7 @@ function App() {
   <Navbar/>
   <AnimatePresence exitBeforeEnter>
     <Routes location={location} key={location.key}>
-      <Route path="/home" element={
+      <Route path="/" element={
       <div>
         <Hero/>
         <Skills/>

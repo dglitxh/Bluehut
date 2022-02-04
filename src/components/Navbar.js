@@ -29,7 +29,7 @@ const Navbar = () => {
                           </div>
                         <div className="navbar-collapse collapse">
                           <ul className="navbar-nav ms-auto mb-1 mb-lg-0 navbar-nav">
-                            <li className="nav-item"><Link to={'/home'} className="nav-link">Home</Link></li>
+                            <li className="nav-item"><Link to={'/'} className="nav-link">Home</Link></li>
                             <li className="nav-item"><Link to={'/services'} className="nav-link">Services</Link></li>
                             <li className="nav-item"><Link to={'/about'} className="nav-link">About</Link></li>
                               <li className="nav-item"><Link to={'/pricing'} className="nav-link">Pricing</Link></li>
@@ -41,14 +41,14 @@ const Navbar = () => {
       <Drawer title="Main Menu" placement="right" onClose={onClose} visible={visible}>
       <div className="drawer-items">
         <div className=''>
-        <ul className="menu-items">
-              <li className=""><Link onClick={onClose} to={'/home'} className="">Home</Link></li>
+        <div className="menu-items">
+              <button className="btn btn-secondary-outline"><Link onClick={onClose} to={'/'} className="">Home</Link></button>
               <li className=""><Link onClick={onClose} to={'/services'} className="">Services</Link></li>
               <li className=""><Link onClick={onClose} to={'/about'} className="">About</Link></li>
               <li className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></li>
               <li className=""><Link onClick={onClose} to={'/pricing'} className="n">Pricing</Link></li>
               <button className='btn btn-danger ' onClick={onClose}>Close</button>
-          </ul>
+          </div>
 
 
         </div>
