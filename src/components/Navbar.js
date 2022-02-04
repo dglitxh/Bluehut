@@ -19,7 +19,7 @@ const Navbar = () => {
       <nav className="  navbar navbar-expand-lg">
         <div className="container">
 
-          <Link to={'/home'} className="navbar-brand">BlueHut Engineering</Link>
+          <Link to={'/'} className="navbar-brand">BlueHut Engineering</Link>
 
                 <div className="collapse-close ">
                   <button onClick={showDrawer} className="navbar-toggler" type="button" data-toggle="collapse"
@@ -42,12 +42,11 @@ const Navbar = () => {
       <div className="drawer-items">
         <div className=''>
         <div className="menu-items">
-              <button className="btn btn-secondary-outline"><Link onClick={onClose} to={'/'} className="">Home</Link></button>
-              <li className=""><Link onClick={onClose} to={'/services'} className="">Services</Link></li>
-              <li className=""><Link onClick={onClose} to={'/about'} className="">About</Link></li>
-              <li className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></li>
-              <li className=""><Link onClick={onClose} to={'/pricing'} className="n">Pricing</Link></li>
-              <button className='btn btn-danger ' onClick={onClose}>Close</button>
+              <h3 className=""><Link onClick={onClose} to={'/'} className="">Home</Link></h3>
+              <h3 className=""><Link onClick={onClose} to={'/services'} className="">Services</Link></h3>
+              <h3 className=""><Link onClick={onClose} to={'/about'} className="">About</Link></h3>
+              <h3 className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></h3>
+              <h3 className=""><Link onClick={onClose} to={'/pricing'} className="">Pricing</Link></h3>
           </div>
 
 

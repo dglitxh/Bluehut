@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
 import heroSvg from './utils/svgs/build.svg'
 import { Link } from 'react-router-dom'
+import PageNav from './PageNav'
 
 
 
@@ -26,7 +27,7 @@ const Hero = () =>  {
 };
 
     return (
-        <motion.div id="hero" className='container mt-5'
+        <motion.div id="hero" className='container mt-5 d-flex flex-column h-100'
       variants={containerVariants}
       initial='hidden'
       animate="visible"
@@ -77,6 +78,7 @@ const Hero = () =>  {
       </div>
       </Col>
     </Row>
+    <PageNav loc={'/services'} text="Next page"/>
         </motion.div>
     )
 }

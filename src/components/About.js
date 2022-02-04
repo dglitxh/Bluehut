@@ -3,6 +3,7 @@ import { Col, Row } from 'antd'
 import heroSvg from './utils/svgs/blocks.svg'
 import mySvg from './utils/svgs/thoughts.svg'
 import { motion  } from 'framer-motion'
+import PageNav from './PageNav'
 
 
 const About = () =>  {
@@ -84,6 +85,8 @@ const About = () =>  {
         </Col>
 
         </Row>
+
+          <PageNav loc={'/pricing'} text="Next page"/>
         </motion.div>
 
     )

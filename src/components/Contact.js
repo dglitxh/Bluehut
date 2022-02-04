@@ -2,7 +2,7 @@ import { message } from 'antd'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion'
-
+import PageNav from './PageNav'
 
 const Contact = ( ) => {
   const form = useRef();
@@ -98,6 +98,7 @@ const Contact = ( ) => {
       </div>
 
       </div>
+      <PageNav loc={'/'} text="Go home"/>
         </motion.div>
     )
 }

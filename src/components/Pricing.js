@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'
+import PageNav from "./PageNav"
 
 
 const Pricing = () => {
@@ -27,8 +28,8 @@ const Pricing = () => {
         exit="exit"
         >
 
-      <h2> Pricing </h2>
-            <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <h2 className="mt-5 mb-10"> Pricing </h2>
+            <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-6xl">
               <div>
                 <div className="
               relative
@@ -40,11 +41,12 @@ const Pricing = () => {
             ">
                   <div className="relative flex flex-col p-8 bg-white">
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-neutral-600">Freelancer</h3>
-                      <p className="flex items-baseline mt-4 text-neutral-600">
-                        <span className="text-5xl font-extrabold tracking-tight">$24</span>
-                        <span className="ml-1 text-xl font-semibold">/month</span>
-                      </p>
+                      <h3 className="text-xl font-semibold text-neutral-600">Domestic</h3>
+                      {// <p className="flex items-baseline mt-4 text-neutral-600">
+                      //   <span className="text-5xl font-extrabold tracking-tight">$24</span>
+                      //   <span className="ml-1 text-xl font-semibold">/month</span>
+                      // </p>
+                    }
                       <p className="mt-6 text-gray-500"> The essentials to provide your best work for clients. </p>
 
 
@@ -139,11 +141,12 @@ const Pricing = () => {
                   </div>
                   <div className="relative flex flex-col p-8 bg-sky-600 rounded-2xl">
                     <div className="relative flex-1">
-                      <h3 className="text-xl font-semibold text-white">Startup</h3>
-                      <p className="flex items-baseline mt-4 text-white">
-                        <span className="text-5xl font-extrabold tracking-tight">$32</span>
-                        <span className="ml-1 text-xl font-semibold">/month</span>
-                      </p>
+                      <h3 className="text-xl font-semibold text-white">Commercial</h3>
+                    {  // <p className="flex items-baseline mt-4 text-white">
+                      //   <span className="text-5xl font-extrabold tracking-tight">$32</span>
+                      //   <span className="ml-1 text-xl font-semibold">/month</span>
+                      // </p>
+                    }
                       <p className="mt-6 text-white text-solitud"> A plan that scales with your rapidly growing business. </p>
 
                       <ul className="pt-6 mt-6 space-y-6 border-t">
@@ -217,11 +220,12 @@ const Pricing = () => {
                   </div>
                   <div className="relative flex flex-col p-8 bg-white">
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-neutral-600">Enterprise</h3>
-                      <p className="flex items-baseline mt-4 text-neutral-600">
-                        <span className="text-5xl font-extrabold tracking-tight">$48</span>
-                        <span className="ml-1 text-xl font-semibold">/month</span>
-                      </p>
+                      {<h3 className="text-xl font-semibold text-neutral-600">industrial</h3>
+                      // <p className="flex items-baseline mt-4 text-neutral-600">
+                      //   <span className="text-5xl font-extrabold tracking-tight">$48</span>
+                      //   <span className="ml-1 text-xl font-semibold">/month</span>
+                      // </p>
+                    }
                       <p className="mt-6 text-gray-500"> Dedicated support and infrastructure for your company. </p>
 
 
@@ -347,6 +351,8 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
+
+              <PageNav loc={'/contact'} text="Next page"/>
           </motion.section>
   )
 }

@@ -2,6 +2,7 @@ import { Row, Col, Modal } from 'antd';
 import { useState } from 'react';
 import { services } from './assets/data'
 import { motion } from 'framer-motion'
+import PageNav from './PageNav'
 
 const Services = () => {
 
@@ -78,6 +79,7 @@ const Services = () => {
         <p>{modalInfo.text}</p>
 
       </Modal>
+      <PageNav loc={'/about'} text="Next page"/>
 </motion.div>
     )
 }

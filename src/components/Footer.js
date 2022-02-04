@@ -14,7 +14,7 @@ const Footer = () => {
           };
     return (
         <div>
-        <footer className="container">
+        <footer className="container mt-auto py-3">
         <hr/>
             <div className="float-end social-icons">
             <a href="twitter"><img alt="icon" src="https://img.icons8.com/color-glass/28/000000/facebook-new.png"/></a>

@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
@@ -28,12 +27,7 @@ function App() {
   <Navbar/>
   <AnimatePresence exitBeforeEnter>
     <Routes location={location} key={location.key}>
-      <Route path="/" element={
-      <div>
-        <Hero/>
-        <Skills/>
-        </div>
-      }
+      <Route path="/" element={<Hero/>}
       />
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={ <About/>}/>

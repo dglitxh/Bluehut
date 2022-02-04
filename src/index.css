@@ -107,10 +107,9 @@ h2:before{
   flex-direction: column;
 }
 
-.menu-items li{
+.menu-items h1 a :active{
   color: #0284C7;
   border-bottom: 2%;
-  font-size: 30px;
 }
 
 .nav-item a {
