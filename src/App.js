@@ -25,7 +25,7 @@ const location = useLocation();
   <React.Fragment>
   <Navbar/>
   <AnimatePresence exitBeforeEnter>
-    <Routes location={location} >
+    <Routes location={location} key={location.key} >
       <Route path="/" element={<Hero/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={ <About/>}/>
