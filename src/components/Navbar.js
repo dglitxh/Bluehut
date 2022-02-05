@@ -45,8 +45,9 @@ const Navbar = () => {
               <h3 className=""><Link onClick={onClose} to={'/'} className="">Home</Link></h3>
               <h3 className=""><Link onClick={onClose} to={'/about'} className="">About</Link></h3>
               <h3 className=""><Link onClick={onClose} to={'/services'} className="">Services</Link></h3>
-              <h3 className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></h3>
               <h3 className=""><Link onClick={onClose} to={'/pricing'} className="">Pricing</Link></h3>
+              <h3 className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></h3>
+             
           </div>
 
 
