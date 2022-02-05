@@ -70,7 +70,7 @@ const Services = () => {
       </Row>
 
       <Modal
-          title={<h4>{modalInfo.heading}</h4>}
+          title={<h3>{modalInfo.heading}</h3>}
           visible={isModalVisible}
           onOk={handleOk}
           onCancel={handleCancel}
@@ -79,7 +79,7 @@ const Services = () => {
         <p>{modalInfo.text}</p>
 
       </Modal>
-      <PageNav loc={'/services'} text="Next page"/>
+      <PageNav loc={'/pricing'} text="Next page"/>
 </motion.div>
     )
 }

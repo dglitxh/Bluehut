@@ -41,7 +41,7 @@ export const services = [
 
     {
         "heading": "5G Services",
-        "icon": "https://img.icons8.com/color/48/000000/pipelines.png",
+        "icon": "https://img.icons8.com/external-wanicon-flat-wanicon/50/000000/external-internet-online-education-wanicon-flat-wanicon.png",
         "text": `Our group of technical experts also offer 5G services.
                 We specialize in providing end-to-end 5G services
                 from design and development, to support and maintenance.`,
@@ -51,10 +51,11 @@ export const services = [
     {
         "heading": "Electrical Installation",
         "icon": "https://img.icons8.com/color/48/000000/electricity.png",
-        "text": `We do electrical installations, we are well 
+        "text": `We do electrical installations, we are well
                 equipped to do any kind of work in the electrical field
                 and we can install any type of electrical systems.`,
         "id": 6
     },
-    
+
+
 ]

@@ -16,12 +16,12 @@ const Footer = () => {
         <div>
         <footer className="container mt-auto py-3">
         <hr/>
-            <div className="float-end social-icons">
-            <a href="twitter"><img alt="icon" src="https://img.icons8.com/color-glass/28/000000/facebook-new.png"/></a>
-            <a href="instagram"><img alt="icon" src="https://img.icons8.com/color-glass/28/000000/instagram-new.png"/></a>
-            <a href="facebook"><img alt="icon" src="https://img.icons8.com/color-glass/28/000000/twitter.png"/></a>
+            <div className="float-end mt-2 social-icons">
+            <a target="_blank" rel="noreferrer" href="https://mobile.twitter.com/Bluehut_Eng"><img className="px-2 " alt="icon" src="https://img.icons8.com/ios/24/000000/twitter--v1.png"/></a>
+            <a target="_blank" rel="noreferrer" href="instagram"><img className="px-2" alt="icon" src="https://img.icons8.com/ios/24/000000/instagram.png"/></a>
+            <a target="_blank" rel="noreferrer" href="facebook"><img className="px-2" alt="icon" src="https://img.icons8.com/ios/24/000000/facebook-circled--v1.png"/></a>
             </div>
-            <p className="footer-text">© 2021 - 2022 BlueHut, Inc.</p>
+            <p className="footer-text mt-2">© 2021 - 2022 BlueHut, Inc.</p>
           </footer>
           <BackTop>
             <div style={style} className='items-center'><img src="https://img.icons8.com/fluency/38/000000/up.png" alt='Up'/></div>
