@@ -40,9 +40,9 @@ const Pricing = () => {
               lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8
               rounded-xl
             ">
-                  <div className="relative flex flex-col p-8 bg-white">
+                  <div className="relative flex flex-col p-8 bg-white rounded-2xl">
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-neutral-600">Domestic</h3>
+                      <h3 className="text-xl font-semibold text-neutral-600">DOMESTIC</h3>
                       {// <p className="flex items-baseline mt-4 text-neutral-600">
                       //   <span className="text-5xl font-extrabold tracking-tight">$24</span>
                       //   <span className="ml-1 text-xl font-semibold">/month</span>
@@ -142,7 +142,7 @@ const Pricing = () => {
                   </div>
                   <div className="relative flex flex-col p-8 bg-sky-600 rounded-2xl">
                     <div className="relative flex-1">
-                      <h3 className="text-xl font-semibold text-white">Commercial</h3>
+                      <h3 className="text-xl font-semibold text-white">COMMERCIAL</h3>
                     {  // <p className="flex items-baseline mt-4 text-white">
                       //   <span className="text-5xl font-extrabold tracking-tight">$32</span>
                       //   <span className="ml-1 text-xl font-semibold">/month</span>
@@ -219,9 +219,9 @@ const Pricing = () => {
                   "> Get started </a>
                     </div>
                   </div>
-                  <div className="relative flex flex-col p-8 bg-white">
+                  <div className="relative flex flex-col p-8 bg-white rounded-2xl">
                     <div className="flex-1">
-                      {<h3 className="text-xl font-semibold text-neutral-600">industrial</h3>
+                      {<h3 className="text-xl font-semibold text-neutral-600">INDUSTRIAL</h3>
                       // <p className="flex items-baseline mt-4 text-neutral-600">
                       //   <span className="text-5xl font-extrabold tracking-tight">$48</span>
                       //   <span className="ml-1 text-xl font-semibold">/month</span>

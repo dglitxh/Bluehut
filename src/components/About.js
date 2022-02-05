@@ -1,6 +1,6 @@
 
 import { Col, Row } from 'antd'
-import heroSvg from './utils/svgs/blocks.svg'
+import heroSvg from './utils/svgs/project.svg'
 import mySvg from './utils/svgs/thoughts.svg'
 import { motion  } from 'framer-motion'
 import PageNav from './PageNav'
@@ -57,7 +57,13 @@ const About = () =>  {
         </div>
 
         </Col>
+        <Col xs={{span:24}} sm={{span:0}} lg={{span:0}} md={{span:0}}>
+        <div data-aos="zoom-out-up"  data-aos-duration="2000" className=" info-item">
 
+          <img src={mySvg} className="img-fluid info-img" alt="" />
+
+        </div>
+        </Col>
         <Col xs={{span:24}} sm={{span:12}} md={{span:12}} lg={{span:12}} >
         <div data-aos="zoom-out-down" className="info-item-text p-6 ">
         <h3>Position Statement </h3>
@@ -76,13 +82,14 @@ const About = () =>  {
         </div>
 
         </Col>
-        <Col xs={{span:24}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
+        <Col xs={{span:0}} sm={{span:12}} lg={{span:12}} md={{span:12}}>
         <div data-aos="zoom-out-up"  data-aos-duration="2000" className=" info-item">
 
           <img src={mySvg} className="img-fluid info-img" alt="" />
 
         </div>
         </Col>
+
 
         </Row>
 

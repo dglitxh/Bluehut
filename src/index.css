@@ -17,8 +17,10 @@ font-size: 18px;
 
 body {
   /*background-color: rgb(10, 10, 56);*/
- /* color: aliceblue;*/
-  color: black;
+background-image: linear-gradient(to right, rgba(236, 231, 231, 0.849), rgba(255, 255, 255, 0.767)),url('./components/utils/bg1.jpg');
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
 
 code {
@@ -125,7 +127,7 @@ h2:before{
 
 .info-card{
   padding: 10%;
-  color: gray;
+  /* color: gray; */
   margin: 2%;
 }
 
@@ -137,7 +139,7 @@ h2:before{
 
 .info-item-text{
   padding: 15% 10%;
-  color: grey
+  /* color: grey */
 }
 
 .info-item-text h3{

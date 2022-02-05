@@ -10,25 +10,23 @@ import "./index.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { aos_settings } from './components/assets/settings'
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation, Routes, Route } from "react-router-dom";
 import React from "react";
 
 
 AOS.init(aos_settings);
-
-
 function App() {
-  const location = useLocation();
 
+const location = useLocation();
 
   return (
     <div className="App">
+
   <React.Fragment>
   <Navbar/>
   <AnimatePresence exitBeforeEnter>
-    <Routes location={location} key={location.key}>
-      <Route path="/" element={<Hero/>}
-      />
+    <Routes location={location} >
+      <Route path="/" element={<Hero/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={ <About/>}/>
       <Route path="/contact" element={ <Contact/>}/>
