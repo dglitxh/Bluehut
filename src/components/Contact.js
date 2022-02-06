@@ -20,7 +20,7 @@ const Contact = ( ) => {
     transition: {  duration: 1  }
   },
   exit: {
-    x: "-100vh",
+    y: "-100vh",
     transition: { ease: 'easeInOut' }
   }
 };
