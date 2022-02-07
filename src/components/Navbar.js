@@ -38,16 +38,22 @@ const Navbar = () => {
                             </ul>
                           </div>
                         </div>
-      <Drawer title="Main Menu" placement="right" onClose={onClose} visible={visible}>
+
+      <Drawer className="drawer text-center" title={<h3>Main Menu</h3>}
+          placement="right"
+          onClose={onClose}
+          visible={visible}
+          width={256}
+          closable={false}
+        >
       <div className="drawer-items">
-        <div className=''>
+        <div className='mt-1'>
         <div className="menu-items">
-              <h3 className=""><Link onClick={onClose} to={'/'} className="">Home</Link></h3>
-              <h3 className=""><Link onClick={onClose} to={'/about'} className="">About</Link></h3>
-              <h3 className=""><Link onClick={onClose} to={'/services'} className="">Services</Link></h3>
-              <h3 className=""><Link onClick={onClose} to={'/pricing'} className="">Pricing</Link></h3>
-              <h3 className=""><Link onClick={onClose} to={'/contact'} className="">Contact</Link></h3>
-             
+            <Link className="text-3xl" onClick={onClose} to={'/'} >Home</Link>
+            <Link className="text-3xl p-3" onClick={onClose} to={'/about'} >About</Link>
+            <Link className="text-3xl p-3" onClick={onClose} to={'/services'} >Services</Link>
+            <Link className="text-3xl p-3" onClick={onClose} to={'/pricing'} >Pricing</Link>
+            <Link className="text-3xl p-3" onClick={onClose} to={'/contact'} >Contact</Link>
           </div>
 
 

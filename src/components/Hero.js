@@ -43,21 +43,20 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          Cutting edge solutions
-          <br></br> in
+          Cutting edge solutions in
           <span> <ReactTyped
                     strings={['Management',
                     'Consultancy',
                     "Testing",
-                    'Quality Assurance'
+                    'Quality Assurance',
+                    'and everything engineering'
                   ]}
                     typeSpeed={90}
                     backSpeed={80}
                     loop
                 />
           </span>
-          <br></br>
-              and everything engineering</h1>
+        </h1>
         <p className=" mb-4">We are engineers and strategists. Creators of thoughtful
          and elegant technology solutions that shape the future.
 
