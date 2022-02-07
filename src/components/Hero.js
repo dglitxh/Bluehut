@@ -64,7 +64,7 @@ const Hero = () =>  {
         </p>
         <Link to={"/services"}>
           <button className="hero-button btn btn-primary btn-large">
-            Start Exploring
+            Get Quote
           </button>
           </Link>
       </motion.div>
