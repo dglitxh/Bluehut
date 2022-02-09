@@ -43,7 +43,7 @@ const Hero = () =>  {
        >
 
         <h1 className="">
-          Cutting edge solutions in
+          Cutting edge solutions in<br></br>
           <span> <ReactTyped
                     strings={['Management',
                     'Consultancy',
