@@ -23,7 +23,6 @@ const Slider = () => {
             <Carousel effect="fade" autoplay arrows prevArrow={<LeftOutlined />}
             nextArrow={<RightOutlined/>}>
                 <div>
-                 Gallery 
                   <img style={contentStyle} className=' img-fluid' src={require('./utils/imgs/img1.jpg')} alt='img'   />
                 </div>
                 <div>
