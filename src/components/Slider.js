@@ -13,14 +13,17 @@ const Slider = () => {
         color: '#fff',
         textAlign: 'center',
         background: 'black',
+        height: '760px',
+        width: '100vw'
       };
 
     return(
         <div className="container">
-          <h2 className="pb-2 mb-6">Gallery</h2>
-            <Carousel autoplay arrows prevArrow={<LeftOutlined />}
+              <h2 className="mt-5 mb-10"> Gallery </h2>
+            <Carousel effect="fade" autoplay arrows prevArrow={<LeftOutlined />}
             nextArrow={<RightOutlined/>}>
                 <div>
+                 Gallery 
                   <img style={contentStyle} className=' img-fluid' src={require('./utils/imgs/img1.jpg')} alt='img'   />
                 </div>
                 <div>
