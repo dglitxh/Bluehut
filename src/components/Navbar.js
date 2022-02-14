@@ -32,6 +32,7 @@ const Navbar = () => {
                             <li className="nav-item"><Link to={'/'} className="nav-link">Home</Link></li>
                             <li className="nav-item"><Link to={'/about'} className="nav-link">About</Link></li>
                             <li className="nav-item"><Link to={'/services'} className="nav-link">Services</Link></li>
+                            <li className="nav-item"><Link to={'/gallery'} className="nav-link">Gallery</Link></li>
                               <li className="nav-item"><Link to={'/pricing'} className="nav-link">Pricing</Link></li>
                             <li className="nav-item"><Link to={'/contact'} className="nav-link">Contact</Link></li>
 
@@ -45,6 +46,7 @@ const Navbar = () => {
           visible={visible}
           width={256}
           closable={false}
+
         >
       <div className="drawer-items">
         <div className='mt-1'>
@@ -52,6 +54,7 @@ const Navbar = () => {
             <Link className="text-3xl" onClick={onClose} to={'/'} >Home</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/about'} >About</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/services'} >Services</Link>
+              <Link className="text-3xl p-3" onClick={onClose} to={'/gallery'} >Gallery</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/pricing'} >Pricing</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/contact'} >Contact</Link>
           </div>

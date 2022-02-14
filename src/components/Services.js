@@ -55,7 +55,7 @@ const Services = () => {
       {services.map((service) => {
         return(
           <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-            <div key={service.id} data-aos="zoom-out-down" className="info-card">
+            <div key={service.id} data-aos="zoom-out-down" data-aos-duration="1500" className="info-card">
               <img alt="icon" src={service.icon}/>
             <h4 className='text-xl text-sky-600'> {service.heading} </h4>
               <p class="card-text">{service.text.slice(0,80)+"...."}</p>
@@ -79,7 +79,7 @@ const Services = () => {
         <p>{modalInfo.text}</p>
 
       </Modal>
-      <PageNav loc={'/pricing'} text="Next page"/>
+      <PageNav loc={'/gallery'} text="Next page"/>
 </motion.div>
     )
 }

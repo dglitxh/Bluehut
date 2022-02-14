@@ -49,7 +49,7 @@ const Hero = () =>  {
                     'Consultancy',
                     "Testing",
                     'Quality Assurance',
-                    'Everything engineering'
+                    'Everything Engineering'
                   ]}
                     typeSpeed={90}
                     backSpeed={80}

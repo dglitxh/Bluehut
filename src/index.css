@@ -56,6 +56,7 @@ h2, h3{
     position: relative;
     font-size: 180%;
 }
+
 h2:before{
     content: "";
     position: absolute;
@@ -65,9 +66,9 @@ h2:before{
     left: 25%;
     border-bottom: 1px solid #0284C7;
 }
+
 .navbar-brand {
   color: #0284C7;
-
 }
 
 .hero h1 span{
@@ -89,7 +90,6 @@ h2:before{
 
 .drawer-items{
   color: black;
-
 }
 
 .desc-cards{
@@ -110,7 +110,7 @@ h2:before{
 
 }
 .drawer{
-  
+
 }
 .menu-items a:focus{
   color: #0284C7;
@@ -220,7 +220,7 @@ color: white;
 .ant-carousel .slick-next,
 .ant-carousel .slick-prev:hover,
 .ant-carousel .slick-next:hover {
-  font-size: inherit;
+  font-size: 90px;
   color: currentColor;
 }
 
@@ -236,4 +236,10 @@ color: white;
   right: 10px;
   z-index: 2;
   color: white;
+}
+
+.slider-img{
+  height: 85vh;
+  width: 85vw;
+  opacity: 0.9;
 }

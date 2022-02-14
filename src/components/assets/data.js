@@ -56,6 +56,34 @@ export const services = [
                 and we can install any type of electrical systems.`,
         "id": 6
     },
+    {
+        "heading": "Real Estate Development",
+        "icon": "https://img.icons8.com/color-glass/48/000000/real-estate.png",
+        "text": `From the first discussion on land acquisition and
+         project design to the execution of construction, the entire
+         process is managed under one roof in a timely manner with
+         utmost care
+         and expediency while adhering to the highest quality standards.`,
+        "id":7
+    },
+    {
+        "heading": "Building And construction",
+        "icon": "https://img.icons8.com/fluency/48/000000/road-worker.png",
+        "text": `We offer a wide variety of packages for your
+         construction project. From foundations and decks to
+         installation of insulation, windows and exterior
+         doors, we will handle every aspect with care and expertise`,
+        "id": 8
+    },
+    {
+        "heading": "Custom Services",
+        "icon": "https://img.icons8.com/external-icongeek26-flat-icongeek26/48/000000/external-team-work-project-work-icongeek26-flat-icongeek26-2.png",
+        "text": `We believe the biggest innovations come when minds
+        meet. That's why we work closely with our partners to invent,
+         create and produce extraordinary products.
+        We call this handcrafted innovation.`,
+        "id": 9
+    },
 
 
 ]

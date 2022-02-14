@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Services from "./components/Services"
 import Pricing from "./components/Pricing"
+import Slider from "./components/Slider"
 import { AnimatePresence } from 'framer-motion'
 import "./index.css"
 import AOS from 'aos'
@@ -28,6 +29,7 @@ const location = useLocation();
     <Routes location={location} key={location.key} >
       <Route path="/" element={<Hero/>}/>
       <Route path="/services" element={<Services/>}/>
+      <Route path="/gallery" element={<Slider/>}/>
       <Route path="/about" element={ <About/>}/>
       <Route path="/contact" element={ <Contact/>}/>
       <Route path="/pricing" element={<Pricing/>}/>
