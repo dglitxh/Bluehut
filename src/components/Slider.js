@@ -1,6 +1,7 @@
-import { Carousel, Image } from "antd"
+import { Carousel } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons"
 import PageNav from './PageNav'
+import { motion  } from 'framer-motion'
 
 
 
@@ -17,8 +18,29 @@ const Slider = () => {
         width: '100vw'
       };
 
+      const containerVariants = {
+        hidden: {
+            opacity: 0,
+            x: '100vw'
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { type: 'spring', duration: 4  }
+          },
+          exit: {
+            x: "-100vh",
+            transition: { ease: 'easeInOut' }
+          }
+        };
+
     return(
-        <div className="container">
+      <motion.div id="about" className="container info mt-5"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      >
               <h2 className="mt-5 mb-10"> Gallery </h2>
             <Carousel effect="fade" autoplay arrows prevArrow={<LeftOutlined />}
             nextArrow={<RightOutlined/>}>
@@ -36,7 +58,7 @@ const Slider = () => {
                 </div>
               </Carousel>,
             <PageNav loc={'/about'} text="Next page"/>
-        </div>
+        </motion.div>
     )
 }
 
