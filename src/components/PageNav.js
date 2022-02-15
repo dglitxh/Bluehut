@@ -21,12 +21,13 @@ const Loader = (props) => {
   }
   return (
     <div className="ml-2 mt-4">
-    <Link to={loc} className=" py-5 my-5">
-      {text}
+    <Link to={loc} className=" pt-5 mt-5">
+
       <motion.img className="loader"
         variants={loaderVariants}
         animate={'animationOne'}
         src="https://img.icons8.com/ios/36/000000/long-arrow-right.png"/>
+{text}
     </Link>
     </div>
   )

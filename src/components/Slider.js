@@ -1,22 +1,9 @@
-import { Carousel } from "antd"
-import { LeftOutlined, RightOutlined } from "@ant-design/icons"
+import { Row, Col, Image } from "antd"
 import PageNav from './PageNav'
 import { motion  } from 'framer-motion'
 
 
-
-
 const Slider = () => {
-
-
-
-    const contentStyle = {
-        color: '#fff',
-        textAlign: 'center',
-        background: 'black',
-        height: '760px',
-        width: '100vw'
-      };
 
       const containerVariants = {
         hidden: {
@@ -35,28 +22,88 @@ const Slider = () => {
         };
 
     return(
-      <motion.div id="about" className="container info mt-5"
+      <motion.div id="about" className="container mt-5"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
       >
-              <h2 className="mt-5 mb-10"> Gallery </h2>
-            <Carousel effect="fade" autoplay arrows prevArrow={<LeftOutlined />}
-            nextArrow={<RightOutlined/>}>
-                <div>
-                  <img style={contentStyle} className=' img-fluid' src={require('./utils/imgs/img1.jpg')} alt='img'   />
+              <h2 className="mb-10"> Gallery </h2>
+
+              <div>
+              <Image.PreviewGroup>
+              <Row>
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                  width={400}
+                  height={270}
+                  src={require('./utils/imgs/img1.jpg')}
+                  alt='img'
+                />
                 </div>
-                <div>
-                    <img style={contentStyle} className=' img-fluid' src={require('./utils/imgs/img2.jpg')} alt='img' height='500'  />
+              </Col>
+
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                    width={400}
+                    height={270}
+                    src={require('./utils/imgs/img2.jpg')}
+                    alt='img'
+                />
                 </div>
-                <div>
-                    <img style={contentStyle} className='img-fluid' src={require('./utils/imgs/img3.jpg')} alt='img' height='500'  />
+              </Col>
+
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                  width={400}
+                  height={270}
+                  src={require('./utils/imgs/img3.jpg')}
+                  alt='img'
+                />
                 </div>
-                <div>
-                    <img style={contentStyle} className=' img-fluid' src={require('./utils/imgs/img4.jpg')} alt='img' height='500'  />
+              </Col>
+
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                  width={400}
+                  height={270}
+                  src={require('./utils/imgs/img4.jpg')}
+                  alt='img'
+                />
                 </div>
-              </Carousel>,
+              </Col>
+
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                  width={400}
+                  height={270}
+                  src={require('./utils/imgs/img5.jpg')}
+                  alt='img'
+                />
+                </div>
+              </Col>
+
+              <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
+                  <div className='mb-4 mt-4'>
+                <Image
+                  width={400}
+                  height={270}
+                  src={require('./utils/imgs/img6.jpg')}
+                  alt='img'
+                />
+                </div>
+              </Col>
+
+              </Row>
+
+               </Image.PreviewGroup>
+         </div>
+
             <PageNav loc={'/about'} text="Next page"/>
         </motion.div>
     )

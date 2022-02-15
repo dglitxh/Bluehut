@@ -1,4 +1,3 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -12,7 +11,7 @@
 *{
  /* color: #f0f8ff;*/
 font-family: 'Lato', sans-serif;
-font-size: 18px;
+font-size: 20px;
 }
 
 body {
@@ -42,7 +41,7 @@ code {
   /* color: #63AFFF; */
   /*color: aliceblue;*/
   margin-bottom: 15%;
-  font-size: 320%;
+  font-size: 24px;
 }
 
 #hero{
@@ -213,30 +212,9 @@ color: white;
 }
 
 .social-icons{
-  display: inline-flex;
+  
 }
 
-.ant-carousel .slick-prev,
-.ant-carousel .slick-next,
-.ant-carousel .slick-prev:hover,
-.ant-carousel .slick-next:hover {
-  font-size: 90px;
-  color: currentColor;
-}
-
-.ant-carousel .slick-prev,
-.ant-carousel .slick-prev:hover {
-  left: 10px;
-  z-index: 2;
-  color: white;
-}
-
-.ant-carousel .slick-next,
-.ant-carousel .slick-next:hover {
-  right: 10px;
-  z-index: 2;
-  color: white;
-}
 
 .slider-img{
   background: black;
