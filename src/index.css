@@ -212,7 +212,7 @@ color: white;
 }
 
 .social-icons{
-  
+  display: inline-flex;
 }
 
 

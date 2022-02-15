@@ -36,10 +36,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                  width={400}
+                  width={380}
                   height={270}
                   src={require('./utils/imgs/img1.jpg')}
                   alt='img'
+                  className='img-fluid'
                 />
                 </div>
               </Col>
@@ -47,10 +48,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                    width={400}
+                    width={380}
                     height={270}
                     src={require('./utils/imgs/img2.jpg')}
                     alt='img'
+                    className='img-fluid'
                 />
                 </div>
               </Col>
@@ -58,10 +60,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                  width={400}
+                  width={380}
                   height={270}
                   src={require('./utils/imgs/img3.jpg')}
                   alt='img'
+                  className='img-fluid'
                 />
                 </div>
               </Col>
@@ -69,10 +72,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                  width={400}
+                  width={380}
                   height={270}
                   src={require('./utils/imgs/img4.jpg')}
                   alt='img'
+                  className='img-fluid'
                 />
                 </div>
               </Col>
@@ -80,10 +84,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                  width={400}
+                  width={380}
                   height={270}
                   src={require('./utils/imgs/img5.jpg')}
                   alt='img'
+                  className='img-fluid'
                 />
                 </div>
               </Col>
@@ -91,10 +96,11 @@ const Slider = () => {
               <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
                   <div className='mb-4 mt-4'>
                 <Image
-                  width={400}
+                  width={380}
                   height={270}
                   src={require('./utils/imgs/img6.jpg')}
                   alt='img'
+                  className='img-fluid'
                 />
                 </div>
               </Col>
