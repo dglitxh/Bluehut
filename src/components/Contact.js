@@ -33,7 +33,6 @@ const Contact = ( ) => {
       .then((result) => {
       message
         .success('Message sent successfully, Thank you', 5);
-
       console.log(result.text, 'message sent!');
       }, (error) => {
         message
@@ -66,11 +65,24 @@ const Contact = ( ) => {
                        name="user_name"/>
              </div>
              <div class="form-group mb-3">
+               <input type="tel"
+                      class="form-control form-control-lg"
+                       placeholder="Phone number"
+                       name="phone"/>
+             </div>
+             <div class="form-group mb-3">
+               <input type="text"
+                      class="form-control form-control-lg"
+                       placeholder="Company/Organization Name"
+                       name="company"/>
+             </div>
+             <div class="form-group mb-3">
                <input type="email"
                       class="form-control form-control-lg"
                        placeholder="YourEmail@email.com"
                        name="user_email"/>
              </div>
+
              <div class="form-group mb-3">
                <textarea class="form-control form-control-lg"
                          placeholder="leave a message"

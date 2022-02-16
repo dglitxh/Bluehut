@@ -44,7 +44,7 @@ const Gallery = () => {
         };
 
     return(
-      <motion.div id="about" className="container mt-5"
+      <motion.div id="gallery" className="container mt-5"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -78,8 +78,9 @@ const Gallery = () => {
          </div>
 
          <Modal
+            bodyStyle={{padding:0}}
              title={null}
-             width='90vw'
+             width={'70vw'}
              visible={isModalVisible}
              onOk={handleOk}
              onCancel={handleCancel}

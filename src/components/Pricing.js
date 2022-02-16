@@ -29,7 +29,7 @@ const Pricing = () => {
         exit="exit"
         >
 
-      <h2 className="mt-5 mb-10"> Pricing </h2>
+      <h2 id='pricing' className="mt-5 mb-10"> Pricing </h2>
             <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-6xl">
               <div>
                 <div className="

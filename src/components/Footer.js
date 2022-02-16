@@ -17,17 +17,21 @@ const Footer = () => {
         <footer className="container pb-3">
         <hr/>
             <div className="float-end social-icons mt-2">
+            <a  href="tel:+2331128450 ">
+              <img className="px-2" alt="icon" src="https://img.icons8.com/ios/20/000000/phone.png"/>
+            </a>
+
             <a target="_blank" rel="noreferrer"
               href="https://mobile.twitter.com/Bluehut_Eng">
-              <img className="px-2 " alt="icon" src="https://img.icons8.com/ios/24/000000/twitter--v1.png"/>
+              <img className="px-2 " alt="icon" src="https://img.icons8.com/ios/20/000000/twitter--v1.png"/>
             </a>
 
             <a target="_blank" rel="noreferrer" href="instagram">
-              <img className="px-2" alt="icon" src="https://img.icons8.com/ios/24/000000/instagram.png"/>
+              <img className="px-2" alt="icon" src="https://img.icons8.com/ios/20/000000/instagram.png"/>
             </a>
 
             <a target="_blank" rel="noreferrer" href="facebook">
-              <img className="px-2" alt="icon" src="https://img.icons8.com/ios/24/000000/facebook-circled--v1.png"/>
+              <img className="px-2" alt="icon" src="https://img.icons8.com/ios/20/000000/facebook-circled--v1.png"/>
             </a>
 
             </div>
