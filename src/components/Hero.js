@@ -77,7 +77,7 @@ const Hero = () =>  {
       </div>
       </Col>
     </Row>
-    <PageNav loc={'/about'} text="Next page"/>
+    <PageNav loc={'/about'} />
         </motion.div>
     )
 }

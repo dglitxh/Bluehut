@@ -87,3 +87,31 @@ export const services = [
 
 
 ]
+
+
+export const pictures = [
+  {
+    'id': 1,
+    'img': require('../utils/imgs/img1.jpg')
+  },
+  {
+    'id': 2,
+    'img': require('../utils/imgs/img2.jpg')
+  },
+  {
+    'id': 3,
+    'img': require('../utils/imgs/img3.jpg')
+  },
+  {
+    'id': 4,
+    'img': require('../utils/imgs/img4.jpg')
+  },
+  {
+    'id': 5,
+    'img': require('../utils/imgs/img5.jpg')
+  },
+  {
+    'id': 6,
+    'img': require('../utils/imgs/img6.jpg')
+  }
+]

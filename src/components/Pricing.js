@@ -353,7 +353,7 @@ const Pricing = () => {
               </div>
             </div>
 
-              <PageNav loc={'/contact'} text="Next page"/>
+              <PageNav loc={'/contact'} />
           </motion.section>
   )
 }

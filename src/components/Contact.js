@@ -99,7 +99,7 @@ const Contact = ( ) => {
       </div>
 
       </div>
-      <PageNav loc={'/'} text="Home"/>
+      <PageNav loc={'/'} />
         </motion.div>
     )
 }

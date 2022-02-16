@@ -79,7 +79,7 @@ const Services = () => {
         <p>{modalInfo.text}</p>
 
       </Modal>
-      <PageNav loc={'/gallery'} text="Next page"/>
+      <PageNav loc={'/gallery'} />
 </motion.div>
     )
 }

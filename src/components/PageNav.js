@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom'
 
 
 const Loader = (props) => {
-  const {loc, text} = props
+  const {loc } = props
 
   const loaderVariants = {
     animationOne: {
-      x: [90, 120],
-      y: [0, -30],
+      x: [0, 30],
       transition: {
         x: {
           yoyo: Infinity,
@@ -27,7 +26,7 @@ const Loader = (props) => {
         variants={loaderVariants}
         animate={'animationOne'}
         src="https://img.icons8.com/ios/36/000000/long-arrow-right.png"/>
-{text}
+
     </Link>
     </div>
   )

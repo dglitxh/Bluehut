@@ -16,7 +16,7 @@ const Footer = () => {
         <div>
         <footer className="container pb-3">
         <hr/>
-            <div className="float-end social-icons">
+            <div className="float-end social-icons mt-2">
             <a target="_blank" rel="noreferrer"
               href="https://mobile.twitter.com/Bluehut_Eng">
               <img className="px-2 " alt="icon" src="https://img.icons8.com/ios/24/000000/twitter--v1.png"/>

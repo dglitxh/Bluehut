@@ -93,7 +93,7 @@ const About = () =>  {
 
         </Row>
 
-          <PageNav loc={'/services'} text="Next page"/>
+          <PageNav loc={'/services'} />
         </motion.div>
 
     )
