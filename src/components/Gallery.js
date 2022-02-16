@@ -80,7 +80,7 @@ const Gallery = () => {
          <Modal
             bodyStyle={{padding:0}}
              title={null}
-             width={'70vw'}
+             width={'80vw'}
              visible={isModalVisible}
              onOk={handleOk}
              onCancel={handleCancel}

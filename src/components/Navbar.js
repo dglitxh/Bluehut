@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
       <nav className="  navbar navbar-expand-lg">
         <div className="container">
-<img className='pb-2 mr-2' alt="icon"
+<img className='pb-2 mr-1' alt="icon"
 src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/34/000000/external-hut-camping-xnimrodx-blue-xnimrodx.png"/>
           <Link to={'/'} className="navbar-brand"> BlueHut Engineering</Link>
 
