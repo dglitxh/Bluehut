@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 
 const Loader = (props) => {
-  const {loc } = props
+  const { loc } = props
 
   const loaderVariants = {
     animationOne: {
-      x: [0, 30],
+      x: [30, 70],
       transition: {
         x: {
           yoyo: Infinity,
@@ -18,14 +18,13 @@ const Loader = (props) => {
       }
     },
   }
-  return (
-    <div className="ml-2 mt-4">
-    <Link to={loc} className=" pt-5 mt-5">
-
-      <motion.img className="loader"
+  return(
+<div>
+    <Link to={loc} className='ml-5'>
+      <motion.img className="ml-5 mb-3"
         variants={loaderVariants}
         animate={'animationOne'}
-        src="https://img.icons8.com/ios/36/000000/long-arrow-right.png"/>
+        src="https://img.icons8.com/color-glass/48/000000/advance.png"/>
 
     </Link>
     </div>

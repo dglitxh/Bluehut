@@ -61,8 +61,8 @@ const Gallery = () => {
                       <motion.img
                       style= {{rotate:-20}}
                       whileHover={{
-                        x: [30, 0, 30],
-                        scale: 1.2,
+                        // x: [30, 0, 30],
+                        scale: 1.3,
                         rotate: 0,
                         transition: { duration: 1 },
                       }}

@@ -50,14 +50,12 @@ const Contact = ( ) => {
       exit="exit"
       >
         <h2> Reach Us </h2>
-        <div class="contact-form" id="contact">
-            <div class="container">
+        <div class="contact-form items-center" id="contact">
+            <div class="container ">
         <form ref={form} onSubmit={sendEmail}>
          <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1 className="text-2xl">Get in Touch</h1>
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 right ">
+         <h3 className='text-center mb-4 text-sky-600'> Get in touch </h3>
+          <div class="col-lg-8 col-md-8 col-sm-12 right relative items-center w-full mx-auto md:px-12 lg:px-12 max-w-6xl">
              <div class="form-group mb-3">
                <input type="text"
                        class="form-control form-control-lg"
