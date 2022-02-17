@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import PageNav from "./PageNav"
+import { Link } from 'react-router-dom'
 
 
 const Pricing = () => {
@@ -29,7 +30,7 @@ const Pricing = () => {
         exit="exit"
         >
 
-      <h2 id='pricing' className="mt-5 mb-10"> Pricing </h2>
+      <h2 id='pricing' className="mt-5 mb-10"> Packages </h2>
             <div className="relative items-center w-full mx-auto md:px-12 lg:px-16 max-w-6xl">
               <div>
                 <div className="
@@ -66,7 +67,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Up to 10 credit cards</span>
+                          <span className="ml-3 text-neutral-600">Timely delivery</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -81,7 +82,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Up to 1,000 credits</span>
+                          <span className="ml-3 text-neutral-600">Easy on your pocket</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -96,7 +97,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Tacky wallet</span>
+                          <span className="ml-3 text-neutral-600">Carefully curated services</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -111,12 +112,13 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Personal profile only</span>
+                          <span className="ml-3 text-neutral-600">Support</span>
                         </li>
+
                       </ul>
                     </div>
                     <div className="mt-6 rounded-lg">
-                      <a href='home' type="highlight" className="
+                      <Link to={'/contact'} className="
                     w-full
                     items-center
                     block
@@ -137,7 +139,7 @@ const Pricing = () => {
                     focus:ring-offset-2
                     focus:ring-gray-500
                     bg-white
-                  "> Get Started </a>
+                  "> Get Started </Link>
                     </div>
                   </div>
                   <div className="relative flex flex-col p-8 bg-sky-600 rounded-2xl">
@@ -158,7 +160,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-white">Up to 10 credit cards</span>
+                          <span className="ml-3 text-white">Timely delivery of services</span>
                         </li>
                         <li className="flex">
                           <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
@@ -166,7 +168,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-white">Up to 10,000 credits</span>
+                          <span className="ml-3 text-white">Value for money</span>
                         </li>
                         <li className="flex">
                           <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
@@ -174,7 +176,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-white">Less tacky wallet </span>
+                          <span className="ml-3 text-white">Carefully curated services</span>
                         </li>
                         <li className="flex">
                           <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
@@ -182,7 +184,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-white">Profile and portafolio</span>
+                          <span className="ml-3 text-white">Quality sevice on larger scale</span>
                         </li>
                         <li className="flex">
                           <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
@@ -190,12 +192,12 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-white">Support</span>
+                          <span className="ml-3 text-white">Better support</span>
                         </li>
                       </ul>
                     </div>
                     <div className="z-50 mt-6 rounded-lg">
-                      <a href="/pricing" type="highlight" className="
+                      <Link to={'/contact'} className="
                     w-full
                     items-center
                     block
@@ -216,7 +218,7 @@ const Pricing = () => {
                     focus:ring-offset-2
                     focus:ring-gray-500
                     bg-white
-                  "> Get started </a>
+                  "> Get started </Link>
                     </div>
                   </div>
                   <div className="relative flex flex-col p-8 bg-white rounded-2xl">
@@ -245,7 +247,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Unlimited credit cards</span>
+                          <span className="ml-3 text-neutral-600">Timely delivery of services</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -260,7 +262,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Unlimited credits</span>
+                          <span className="ml-3 text-neutral-600">Greatest value for money</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -275,7 +277,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">A super wallet</span>
+                          <span className="ml-3 text-neutral-600">Meticulously designed innovation</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -290,7 +292,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Shout out </span>
+                          <span className="ml-3 text-neutral-600">Value added services </span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -305,7 +307,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Better support</span>
+                          <span className="ml-3 text-neutral-600">Round the clock support</span>
                         </li>
                         <li className="flex">
                           <div className="
@@ -325,7 +327,7 @@ const Pricing = () => {
                       </ul>
                     </div>
                     <div className="mt-6 rounded-lg">
-                      <a href='home' type="highlight" className="
+                      <Link to={'/contact'} className="
                     w-full
                     items-center
                     block
@@ -346,7 +348,7 @@ const Pricing = () => {
                     focus:ring-offset-2
                     focus:ring-gray-500
                     bg-white
-                  "> Get Started </a>
+                  "> Get Started </Link>
                     </div>
                   </div>
                 </div>

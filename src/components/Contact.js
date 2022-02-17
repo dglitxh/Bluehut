@@ -63,27 +63,42 @@ const Contact = ( ) => {
           <div class="col-lg-8 col-md-8 col-sm-12 right relative items-center w-full mx-auto md:px-12 lg:px-12 max-w-6xl">
              <div class="form-group mb-3">
                <input type="text"
+                        required
                        class="form-control form-control-lg"
                        placeholder="Your Name"
                        name="user_name"/>
              </div>
              <div class="form-group mb-3">
                <input type="tel"
+                      required
                       class="form-control form-control-lg"
                        placeholder="Phone number"
                        name="phone"/>
              </div>
              <div class="form-group mb-3">
                <input type="text"
+                      
                       class="form-control form-control-lg"
                        placeholder="Company/Organization Name"
                        name="company"/>
              </div>
              <div class="form-group mb-3">
                <input type="email"
+                      required
                       class="form-control form-control-lg"
                        placeholder="YourEmail@email.com"
                        name="user_email"/>
+             </div>
+             <div class="form-group mb-3">
+               <select
+                      class="form-control form-control-lg"
+                       name="package"
+                       required>
+                       <option className="text-gray-600" value="">--Please click to select a package--</option>
+                       <option value="Domestic">Domestic</option>
+                       <option value="Commercial">Commercial</option>
+                       <option value="Industrial">Industrial</option>
+                    </select>
              </div>
 
              <div class="form-group mb-3">
