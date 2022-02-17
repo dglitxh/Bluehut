@@ -24,7 +24,7 @@ const Loader = (props) => {
       <motion.img className="ml-3 mb-3"
         variants={loaderVariants}
         animate={'animationOne'}
-        src="https://img.icons8.com/nolan/34/long-arrow-right--v1.png"/>
+        src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-right-arrow-arrows-dreamstale-lineal-dreamstale-17.png"/>
 
     </Link>
     </div>

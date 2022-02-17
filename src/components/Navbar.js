@@ -34,7 +34,7 @@ src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/34/000000/external-h
                             <li className="nav-item"><Link to={'/about'} className="nav-link">About</Link></li>
                             <li className="nav-item"><Link to={'/services'} className="nav-link">Services</Link></li>
                             <li className="nav-item"><Link to={'/gallery'} className="nav-link">Gallery</Link></li>
-                              <li className="nav-item"><Link to={'/pricing'} className="nav-link">Pricing</Link></li>
+                              <li className="nav-item"><Link to={'/pricing'} className="nav-link">Packages</Link></li>
                             <li className="nav-item"><Link to={'/contact'} className="nav-link">Contact</Link></li>
 
                             </ul>
@@ -56,7 +56,7 @@ src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/34/000000/external-h
             <Link className="text-3xl p-3" onClick={onClose} to={'/about'} >About</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/services'} >Services</Link>
               <Link className="text-3xl p-3" onClick={onClose} to={'/gallery'} >Gallery</Link>
-            <Link className="text-3xl p-3" onClick={onClose} to={'/pricing'} >Pricing</Link>
+            <Link className="text-3xl p-3" onClick={onClose} to={'/pricing'} >Packages</Link>
             <Link className="text-3xl p-3" onClick={onClose} to={'/contact'} >Contact</Link>
           </div>
 

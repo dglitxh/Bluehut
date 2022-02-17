@@ -67,7 +67,7 @@ const Pricing = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                           </div>
-                          <span className="ml-3 text-neutral-600">Timely delivery</span>
+                          <span className="ml-3 text-neutral-600">Timely delivery of services</span>
                         </li>
                         <li className="flex">
                           <div className="
