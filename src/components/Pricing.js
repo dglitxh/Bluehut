@@ -49,7 +49,7 @@ const Pricing = () => {
                       //   <span className="ml-1 text-xl font-semibold">/month</span>
                       // </p>
                     }
-                      <p className="mt-6 text-gray-500"> The essentials to provide your best work for clients. </p>
+                      <p className="mt-6 text-gray-500"> The essentials to provide our best work for clients. </p>
 
 
                       <ul className="pt-6 mt-6 space-y-6 border-t">
