@@ -61,11 +61,11 @@ const Gallery = () => {
                       <motion.img
                       style= {{rotate:-20}}
                       whileHover={{
-                        // x: [30, 0, 30],
                         scale: 1.3,
                         rotate: 0,
                         transition: { duration: 1 },
                       }}
+                      className='rounded-2xl'
                        onClick={()=>handleClick(pic.id)} alt="icon" src={pic.img}/>
               </div>
 
@@ -86,7 +86,7 @@ const Gallery = () => {
              onCancel={handleCancel}
              footer={null}
          >
-         <img className='p-0 m-0' src={imageInfo.img} alt="som_pic" />
+         <img className='p-0 m-0 ' src={imageInfo.img} alt="som_pic" />
 
          </Modal>
             <PageNav loc={'/pricing'} />

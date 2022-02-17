@@ -61,11 +61,13 @@ const Hero = () =>  {
          and elegant technology solutions that shape the future.
 
         </p>
-        <Link to={"/services"}>
-          <button className="hero-button btn btn-primary btn-large">
+        <Link to={"/contact"}>
+          <button className="mr-3 hero-button btn btn-primary btn-large">
             Get Quote
           </button>
           </Link>
+
+
       </motion.div>
       </Col>
       <Col xs={{span:0}} sm={{span:0}} md={{span:0}} lg={{span:12}} >

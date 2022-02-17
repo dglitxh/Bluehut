@@ -17,7 +17,7 @@ const Footer = () => {
         <footer className="container pb-3">
         <hr/>
             <div className="float-end social-icons mt-2">
-            <a  href="tel:+2331128450 ">
+            <a  href="tel:+233501128450">
               <img className="px-2" alt="icon" src="https://img.icons8.com/ios/20/000000/phone.png"/>
             </a>
 

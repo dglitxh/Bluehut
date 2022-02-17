@@ -9,11 +9,11 @@ const Loader = (props) => {
 
   const loaderVariants = {
     animationOne: {
-      x: [30, 70],
+      x: [10, 70],
       transition: {
         x: {
           yoyo: Infinity,
-          duration: 0.8,
+          duration: 1,
         },
       }
     },
@@ -21,10 +21,10 @@ const Loader = (props) => {
   return(
 <div>
     <Link to={loc} className='ml-5'>
-      <motion.img className="ml-5 mb-3"
+      <motion.img className="ml-3 mb-3"
         variants={loaderVariants}
         animate={'animationOne'}
-        src="https://img.icons8.com/color-glass/48/000000/advance.png"/>
+        src="https://img.icons8.com/nolan/64/long-arrow-right--v1.png"/>
 
     </Link>
     </div>

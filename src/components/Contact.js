@@ -52,9 +52,14 @@ const Contact = ( ) => {
         <h2> Reach Us </h2>
         <div class="contact-form items-center" id="contact">
             <div class="container ">
+            <div class="row">
+            <h3 className='text-center mb-4 text-sky-600'> Get in touch </h3>
+            <a className="text-center mb-5" href="tel:+233501128450">
+            <button className=" hero-button btn btn-outline-primary btn-large">
+             Call Us Now
+            </button>
+               </a>
         <form ref={form} onSubmit={sendEmail}>
-         <div class="row">
-         <h3 className='text-center mb-4 text-sky-600'> Get in touch </h3>
           <div class="col-lg-8 col-md-8 col-sm-12 right relative items-center w-full mx-auto md:px-12 lg:px-12 max-w-6xl">
              <div class="form-group mb-3">
                <input type="text"
@@ -89,9 +94,10 @@ const Contact = ( ) => {
                </textarea>
              </div>
              <button type="submit" class="btn btn-secondary btn-block">Send</button>
+
           </div>
-         </div>
         </form>
+        </div>
         </div>
         </div>
 

@@ -17,9 +17,9 @@ font-size: 18px;
 
 body {
   /*background-color: rgb(10, 10, 56);*/
-background-image: linear-gradient(to right, rgba(214, 214, 214, 0.85),
-rgba(214, 214, 214, 0.84)),
- url('./components/utils/bgs/bg2.jpg');
+background-image: linear-gradient(to right, rgba(214, 214, 214, 0.86),
+rgba(214, 214, 214, 0.85)),
+ url('./components/utils/bgs/bg1.jpg');
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
@@ -47,7 +47,7 @@ code {
   /* color: #63AFFF; */
   /*color: aliceblue;*/
   margin-bottom: 15%;
-  font-size: 320%;
+  font-size: 360%;
 }
 
 #hero{
@@ -224,4 +224,12 @@ color: white;
 }
 .social-icons{
   display: inline-flex;
+
+}
+.social-icons a:hover{
+  scale: 1.4;
+}
+
+.btn-outline-primary:hover{
+  background-color: #0284C7;
 }
