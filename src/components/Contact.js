@@ -77,7 +77,7 @@ const Contact = ( ) => {
              </div>
              <div class="form-group mb-3">
                <input type="text"
-                      
+
                       class="form-control form-control-lg"
                        placeholder="Company/Organization Name"
                        name="company"/>
@@ -94,7 +94,7 @@ const Contact = ( ) => {
                       class="form-control form-control-lg"
                        name="package"
                        required>
-                       <option className="text-gray-600" value="">--Please click to select a package--</option>
+                       <option className="text-gray-600" value="none">--click to select a package--</option>
                        <option value="Domestic">Domestic</option>
                        <option value="Commercial">Commercial</option>
                        <option value="Industrial">Industrial</option>
