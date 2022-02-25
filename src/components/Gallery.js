@@ -1,31 +1,11 @@
-import { Row, Col, Modal, Image } from "antd"
+import { Row, Col, Image } from "antd"
 import PageNav from './PageNav'
 import { motion  } from 'framer-motion'
 import { pictures } from './assets/data'
-import { useState } from 'react'
+
 
 
 const Gallery = () => {
-  const [imageInfo, setImageInfo] = useState(0)
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-
-  const handleClick = (id) => {
-    console.log('id = ', id)
-    setImageInfo(pictures.find((el) => el.id === id))
-    showModal()
-  }
-    const showModal = () => {
-      setIsModalVisible(true);
-    };
-
-    const handleOk = () => {
-      setIsModalVisible(false);
-    };
-
-    const handleCancel = () => {
-      setIsModalVisible(false);
-    };
 
       const containerVariants = {
         hidden: {
@@ -53,8 +33,9 @@ const Gallery = () => {
               <h2 className="mb-10"> Gallery </h2>
 
               <div>
-              <Row >
               <Image.PreviewGroup>
+              <Row >
+
               {pictures.map((pic) => {
                 return(
                   <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
@@ -77,23 +58,11 @@ const Gallery = () => {
                 )
               })
              }
-               </Image.PreviewGroup>
+
               </Row>
+               </Image.PreviewGroup>
 
          </div>
-
-         <Modal
-            bodyStyle={{padding:0}}
-             title={null}
-             width={'75vw'}
-             visible={isModalVisible}
-             onOk={handleOk}
-             onCancel={handleCancel}
-             footer={null}
-         >
-         <img className='p-0 m-0 ' src={imageInfo.img} alt="som_pic" />
-
-         </Modal>
             <PageNav loc={'/pricing'} />
         </motion.div>
     )
