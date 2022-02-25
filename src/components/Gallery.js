@@ -1,4 +1,4 @@
-import { Row, Col, Modal } from "antd"
+import { Row, Col, Modal, Image } from "antd"
 import PageNav from './PageNav'
 import { motion  } from 'framer-motion'
 import { pictures } from './assets/data'
@@ -54,27 +54,32 @@ const Gallery = () => {
 
               <div>
               <Row >
+              <Image.PreviewGroup>
               {pictures.map((pic) => {
                 return(
                   <Col xs={{span:24}} sm={{span:12}} lg={{span:8}} md={{span:8}}>
-                    <div key={pic.id} data-aos="zoom-out-down" data-aos-duration="1500" className="info-card">
-                      <motion.img
-                      style= {{rotate:-20}}
-                      whileHover={{
-                        scale: 1.3,
-                        rotate: 0,
-                        transition: { duration: 1 },
-                      }}
+                    <motion.div key={pic.id}
+                    style= {{rotate:-20}}
+                    whileHover={{
+                      scale: 1.3,
+                      rotate: 0,
+                      transition: { duration: 0 },
+                    }}
+                      data-aos="zoom-out-down" data-aos-duration="1500" className="info-card">
+                      <Image
+
                       className='rounded-2xl'
-                       onClick={()=>handleClick(pic.id)} alt="icon" src={pic.img}/>
-              </div>
+                        alt="icon" src={pic.img}/>
+              </motion.div>
 
               </Col>
+
                 )
               })
              }
-
+               </Image.PreviewGroup>
               </Row>
+
          </div>
 
          <Modal

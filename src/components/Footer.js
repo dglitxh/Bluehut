@@ -11,6 +11,7 @@ const Footer = () => {
           color: '#fff',
           textAlign: 'center',
           fontSize: 14,
+          background: '#0284C7'
           };
     return (
         <div>
@@ -38,7 +39,7 @@ const Footer = () => {
             <p className="footer-text mt-2">© 2021 - 2022 BlueHut, Inc.</p>
           </footer>
           <BackTop>
-            <div style={style} className='items-center'><img src="https://img.icons8.com/fluency/38/000000/up.png" alt='Up'/></div>
+            <div style={style} className='items-center'><img src="https://img.icons8.com/metro/26/000000/collapse-arrow.png" alt='Up'/></div>
           </BackTop>
         </div>
     )
