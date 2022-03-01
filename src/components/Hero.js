@@ -27,14 +27,22 @@ const Hero = () =>  {
 };
 
     return (
-        <motion.div id="hero" className='container mt-5 d-flex flex-column h-100'
+        <motion.div id="hero" className='container mt-2 d-flex flex-column h-100'
       variants={containerVariants}
       initial='hidden'
       animate="visible"
       exit="exit"
       >
     <Row >
-      <Col sm={{span:24}} lg={{span:12}} md={{span:24}}>
+    <Col xs={{span:24}} sm={{span:24}} md={{span:0}} lg={{span:0}} >
+    <div className="hero-img">
+      <motion.img
+        animate={{ scale: [0.2, 1.5, 1] }}
+        transition={{ ease: "easeOut", duration: 2 }}
+       src={heroSvg} className="img-fluid" alt="svg" loading="lazy" />
+    </div>
+    </Col>
+      <Col sm={{span:24}} lg={{span:12}} md={{span:12}}>
 
               <br/>
       <motion.div className="hero"
@@ -42,8 +50,8 @@ const Hero = () =>  {
            transition={{ ease: "easeOut", duration: 2 }}
        >
 
-        <h1 className="">
-          Cutting edge solutions in<br></br>
+        <h1 className="display-4 text-bold">
+          Cutting edge solutions in
           <span> <ReactTyped
                     strings={['Management',
                     'Consultancy',
@@ -70,7 +78,7 @@ const Hero = () =>  {
 
       </motion.div>
       </Col>
-      <Col xs={{span:0}} sm={{span:0}} md={{span:0}} lg={{span:12}} >
+      <Col xs={{span:0}} sm={{span:0}} md={{span:12}} lg={{span:12}} >
       <div className="hero-img">
         <motion.img
           animate={{ scale: [0.2, 1.5, 1] }}
