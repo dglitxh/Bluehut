@@ -50,7 +50,7 @@ const Hero = () =>  {
            transition={{ ease: "easeOut", duration: 2 }}
        >
 
-        <h1 className="display-4 text-bold">
+        <h1 className="display-3">
           Cutting edge solutions in
           <span> <ReactTyped
                     strings={['Management',
