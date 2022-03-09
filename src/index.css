@@ -40,15 +40,15 @@ code {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  padding-top: 8%;
+  padding-top: 4%;
   /* color: #63AFFF; */
   /*color: aliceblue;*/
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   font-size: 360%;
 }
 
 #hero{
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 h2, h3{

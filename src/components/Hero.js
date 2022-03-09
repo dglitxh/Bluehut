@@ -34,7 +34,7 @@ const Hero = () =>  {
       exit="exit"
       >
     <Row >
-    <Col xs={{span:24}} sm={{span:24}} md={{span:0}} lg={{span:0}} >
+    <Col xs={{span:24}} sm={{span:24}} md={{span:24}} lg={{span:0}} >
     <div className="hero-img">
       <motion.img
         animate={{ scale: [0.2, 1.5, 1] }}
@@ -42,7 +42,7 @@ const Hero = () =>  {
        src={heroSvg} className="img-fluid" alt="svg" loading="lazy" />
     </div>
     </Col>
-      <Col sm={{span:24}} lg={{span:12}} md={{span:12}}>
+      <Col sm={{span:24}} lg={{span:12}} md={{span:24}}>
 
               <br/>
       <motion.div className="hero"
@@ -51,9 +51,9 @@ const Hero = () =>  {
        >
 
         <h1 className="display-4">
-          Cutting edge solutions
+          Cutting edge solutions in
           <br></br>
-          in <span>
+           <span>
             <ReactTyped
                     strings={[' Management',
                     ' Consultancy',
@@ -81,7 +81,7 @@ const Hero = () =>  {
 
       </motion.div>
       </Col>
-      <Col xs={{span:0}} sm={{span:0}} md={{span:12}} lg={{span:12}} >
+      <Col xs={{span:0}} sm={{span:0}} md={{span:0}} lg={{span:12}} >
       <div className="hero-img">
         <motion.img
           animate={{ scale: [0.2, 1.5, 1] }}

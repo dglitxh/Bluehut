@@ -58,7 +58,7 @@ const Services = () => {
             <div key={service.id} data-aos="zoom-out-down" data-aos-duration="1500" className="info-card">
               <img alt="icon" src={service.icon}/>
             <h4 className='text-xl text-sky-600'> {service.heading} </h4>
-              <p class="card-text">{service.text.slice(0,80)+"...."}</p>
+              <p class="card-text">{service.text.slice(0,80)+" ..."}</p>
               <button onClick={() => openModal(service.id)} className='btn btn-outline-primary'>Read more</button>
       </div>
 
