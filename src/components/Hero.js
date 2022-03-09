@@ -50,20 +50,24 @@ const Hero = () =>  {
            transition={{ ease: "easeOut", duration: 2 }}
        >
 
-        <h1 className="display-3">
-          Cutting edge solutions in
-          <span> <ReactTyped
-                    strings={['Management',
-                    'Consultancy',
-                    "Testing",
-                    'Quality Assurance',
-                    'Everything Engineering'
+        <h1 className="display-4">
+          Cutting edge solutions
+          <br></br>
+          in
+          <span>
+            <ReactTyped
+                    strings={[' Management',
+                    ' Consultancy',
+                    " Testing",
+                    ' Quality Assurance',
                   ]}
-                    typeSpeed={90}
-                    backSpeed={80}
+                    typeSpeed={70}
+                    backSpeed={60}
                     loop
-                />
+              />
           </span>
+          <br></br>
+         and everything engineering
         </h1>
         <p className=" mb-4">We are engineers and strategists. Creators of thoughtful
          and elegant technology solutions that shape the future.
