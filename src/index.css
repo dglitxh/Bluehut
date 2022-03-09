@@ -14,8 +14,8 @@ font-size: 18px;
 
 body {
   /*background-color: rgb(10, 10, 56);*/
-background-image: linear-gradient(to right, rgba(214, 214, 214, 0.94),
-rgba(214, 214, 214, 0.95)),
+background-image: linear-gradient(to right, rgba(214, 214, 214, 0.91),
+rgba(214, 214, 214, 0.96)),
  url('./components/utils/bgs/bg1.jpg');
 background-position: center;
 background-size: cover;
