@@ -16,7 +16,7 @@ body {
   /*background-color: rgb(10, 10, 56);*/
 background-image: linear-gradient(to right, rgba(214, 214, 214, 0.91),
 rgba(214, 214, 214, 0.96)),
- url('./components/utils/bgs/bg1.jpg');
+ url('./components/utils/bgs/bg2.jpg');
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
